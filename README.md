@@ -1,6 +1,6 @@
 # DKBMC UI 컴퍼논트
 
-DKBMC 공통컴포넌트 제작용
+DKBMC 공통컴포넌트 제작용.....
 
 ## Getting started
 
