@@ -10,11 +10,6 @@
 @import "./base/base";
 @import "./base/reset";
 
-// LAYOUT
-@import "./layouts/layout";
-@import "./layouts/header";
-@import "./layouts/footer";
-
 
 // COMPONENTS
 @import "./components/component";
@@ -36,20 +31,3 @@
 @import "./plugins/ripples";
 @import "./plugins/jquery-ui-sass-master/jquery-ui";
 @import "./plugins/MonthPicker";
-
-// PAGES
-@import "./pages/main";
-@import "./pages/usim";
-@import "./pages/phone";
-@import "./pages/products";
-@import "./pages/event";
-@import "./pages/customer";
-@import "./pages/my";
-@import "./pages/util";
-@import "./pages/footer";
-@import "./pages/extra";
-@import "./pages/goodok";
-@import "./pages/jehyu";
-
-// MEDIA QUERY
-@import "./layouts/mediaquery";
