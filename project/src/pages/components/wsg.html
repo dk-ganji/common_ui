@@ -9,14 +9,9 @@
             <h1>
                 <a href="javascript:void(0);"><img src="../../status/assets/logo.png" alt="DK BMC"></a>
             </h1>
-            <nav id="nav">
-                <ul>
-                    <li class="on"><a href="wsg.html">웹스타일가이드</a></li>
-                    <li class=""><a href="slider.html">컴포넌트</a></li>
-                    <li class=""><a href="scripts.html">스크립트 가이드</a></li>
-                    <!-- <li class=""><a href="../layouts/layout.html">레이아웃</a></li> -->
-                </ul>
-            </nav>
+            @@include('./pages/includes/guide/depth_one.html', {
+                menu : 'wsg',
+            })
         </header>
 
         <ul class="guideSubmenu">
@@ -190,7 +185,7 @@ p {
     </div>
 
     <!-- SCRIPT IMPORT -->
-    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+    @@include('../src/pages/includes/scriptImport.html')
 
     <!-- LAYER POPUP -->
     @@include('./pages/includes/layerpopup.html')

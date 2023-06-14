@@ -19,16 +19,9 @@
             </nav>
         </header>
 
-        <ul class="guideSubmenu">
-            <li><a href="./slider.html">슬라이더</a></li>
-            <li><a href="./button.html">버튼</a></li>
-            <li><a href="./tab.html">탭</a></li>
-            <li><a href="./form.html">폼</a></li>
-            <li><a href="./list.html">리스트</a></li>
-            <li><a href="./accordian.html">아코디언</a></li>
-            <li><a href="./layerpopup.html" class="guideOn">팝업</a></li>
-            <li><a href="./unit.html">유닛</a></li>
-        </ul>
+        @@include('./pages/includes/guide/depth_two.html', {
+            menu : 'layerpopup',
+        })
 
         <div class="guideContainer">
             <section class="sample">
@@ -76,7 +69,7 @@
     @@include('./pages/includes/layerpopup.html')
 
     <!-- SCRIPT IMPORT -->
-    @@include('../src/pages/includes/scriptImport.html', {pageMain : false,})
+    @@include('../src/pages/includes/scriptImport.html')
 </body>
 
 </html>
