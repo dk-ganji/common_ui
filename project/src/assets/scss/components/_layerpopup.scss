@@ -7,11 +7,11 @@
         display: flex;flex-direction: column;align-items: center;justify-content: center;width: 100%;max-width: 500px;padding:50px 0;background-color: #fff;border-radius:20px;overflow: hidden;opacity: 1;transform: translateY(-50px);transition: all 0.3s ease-out;
         .txt {
             &-main{
-                display: block; margin-bottom: 16px; @include subContsTitle;
+                display: block; margin-bottom: 16px; @include h4Typo;
                 & > span{font-size: inherit; font-weight: inherit; color: inherit;}
                 & > em{font-style: normal; font-size: inherit; font-weight: inherit; color: #f60019;}
             }
-            &-sub{display: block; @include defaultTxt;}
+            &-sub{display: block; @include p2Typo;}
         }
 
         .popup {
@@ -89,14 +89,14 @@
         display: flex;flex-direction: column;align-items: center;justify-content: center; position:relative; width: 100%;max-width: 500px;padding-top: 50px; background-color: #fff;border-radius: 10px;overflow: hidden;opacity: 0;transform: translateY(-50px);transition: all 0.3s ease-out;max-height: 90vh;
         .txt {
             &-main{
-                display: block; margin-bottom: 16px; @include subContsTitle; text-align: center;
+                display: block; margin-bottom: 16px; @include h4Typo; text-align: center;
                 & > span{font-size: inherit; font-weight: inherit; color: inherit;}
                 & > em{font-style: normal; font-size: inherit; font-weight: inherit; color: #f60019;}
             }
             &-sub{
-                display: block; @include defaultTxt; line-height: 24px;
+                display: block; @include p2Typo; line-height: 24px;
                 &>strong{
-                    @include normalTxt;
+                    @include p2Typo;
                 }
             }
         }
@@ -169,9 +169,9 @@
                     & > em{font-style: normal; font-size: inherit; font-weight: inherit; color: #f60019;}
                 }
                 &-sub{
-                    display: block; @include defaultTxt; line-height: 24px;
+                    display: block; @include p2Typo; line-height: 24px;
                     &>strong{
-                        @include normalTxt;
+                        @include p2Typo;
                     }
                 }
             }
@@ -202,7 +202,7 @@
                         }
                         ol{
                             li{
-                                @include defaultTxt;
+                                @include p2Typo;
                                 & + li{margin-top: 10px;}
                             }
                         }
@@ -213,9 +213,9 @@
                         }
                     }
                     .body-tit{
-                        @include mainTxt; margin-bottom: 10px;
+                        @include p1Typo; margin-bottom: 10px;
                         &-sm{
-                            @include normalTxt; margin-bottom: 10px;
+                            @include p2Typo; margin-bottom: 10px;
                         }
                     }
                     &::-webkit-scrollbar{
@@ -257,8 +257,8 @@
 
     header{
         display: flex; justify-content: space-between; align-items: center; position:fixed; left: 0; top: 0; z-index: 102; width:100%; height: 120px; border-bottom: 2px solid #ddd; box-sizing: border-box; background: #fff;
-        h1{display: inline-flex; margin-left: 40px; @include subContsTitle;}
-        h2{display: inline-flex; margin-left: 40px; @include subContsTitle;}
+        h1{display: inline-flex; margin-left: 40px; @include h4Typo;}
+        h2{display: inline-flex; margin-left: 40px; @include h4Typo;}
         button{display: inline-flex; width: 80px; height: 80px; margin-right: 20px; @include backgroundImg('/assets/images/common/header-btn-close.png', 50%, 32px); font-size: 0;}
     }
     .full-popup-conts{
@@ -299,7 +299,7 @@
             li {
                 text-align: center;
                 img {display:block;width:110px;height:110px;margin-bottom:20px;}
-                span {display:block;@include mainTxt;}
+                span {display:block;@include p1Typo;}
             }
         }
     }
@@ -310,12 +310,12 @@
 
 .breakage-noApply {
     .txt-main {margin-bottom:20px;}
-    &>strong {display:block;margin-bottom:10px;@include normalTxt;}
+    &>strong {display:block;margin-bottom:10px;@include p2Typo;}
     &>p {
-        @include defaultTxt;
+        @include p2Typo;
         &+p {margin-top:10px;}
     }
 }
 .link-txt{
-    @include defaultTxt; color:#0054ff;
+    @include p2Typo; color:#0054ff;
 }

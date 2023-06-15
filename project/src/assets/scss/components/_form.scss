@@ -3,26 +3,26 @@
 // extend
 %input {
     width:100%;height: 58px;padding:16px 20px;border:1px solid $gray02;border-radius:7px;transition:border-color 0.3s ease;
-    @include defaultTxt;
+    @include p2Typo;
 }
 %label {
     display:block;margin-bottom:16px;text-align:left;
-    @include normalTxt;
-    &::placeholder {@include defaultTxt; color: $gray04;}
+    @include p2Typo;
+    &::placeholder {@include p2Typo; color: $gray04;}
 }
 .ico-delete{
     width: 24px;height: 24px;
     @include backgroundImg('../../assets/images/icon/ico-delete.svg', center, contain);
 }
 
-.nec {padding:0 0 0 4px !important;@include normalTxt;color:#cf192b !important;}
+.nec {padding:0 0 0 4px !important;@include p2Typo;color:#cf192b !important;}
 
 .box-input {
     width:630px;
     .input-wrap {position: relative;}
     input[type=text],input[type=number] {
         &:disabled {background-color: $gray01;}
-        &::placeholder {@include defaultTxt; color: $gray04;}
+        &::placeholder {@include p2Typo; color: $gray04;}
     }
     .input {
         &-label {
@@ -35,12 +35,12 @@
             &.is-time {padding-right: 100px !important;}
             &.is-unit {padding-right: 87px;}
             &.is-masking {padding-right: 95px;}
-            &::placeholder {@include defaultTxt; color: $gray04;}
+            &::placeholder {@include p2Typo; color: $gray04;}
             &:focus {border-color: $black;}
         }
         &-unit{
             position: absolute;right: 20px;/*top: 50%;transform: translateY(-50%);*/bottom:0;margin-bottom:20px;
-            @include defaultTxt;
+            @include p2Typo;
             &.on{right: 52px;}
         }
     }
@@ -53,15 +53,15 @@
         }
     }
     .txt{
-        &-error {display: none; @include defaultTxt;}
+        &-error {display: none; @include p2Typo;}
         &-sending {
-            display:none; @include defaultTxt;
+            display:none; @include p2Typo;
         }
         &-description {
-            display:none; @include defaultTxt;/*color: #1baa46;*/
+            display:none; @include p2Typo;/*color: #1baa46;*/
         }
         &-time {
-            position: absolute;top: 50%;right: 30px;@include defaultTxt; color:$purple;transform: translateY(-50%);
+            position: absolute;top: 50%;right: 30px;@include p2Typo; color:$purple;transform: translateY(-50%);
             &.on{right: 56px;}
         }
     }
@@ -69,7 +69,7 @@
     // error case
     &.error {
         .input-default {border-color: $red;}
-        .txt-error{display:block; margin-top: 10px; /*@include smallDepthTxt2;*/ color: $red; text-align: left;}
+        .txt-error{display:block; margin-top: 10px; /*@include small1Typo;*/ color: $red; text-align: left;}
     }
 
     // success case
@@ -79,7 +79,7 @@
     // 인증번호 발송 case
     &.sending {
         .txt-sending{
-            display:block; margin-top:10px; @include normalTxt01;
+            display:block; margin-top:10px; @include p2Typo;
         }
     }
 
@@ -87,7 +87,7 @@
     .validation-list{
         margin-top: 10px; padding-left: 10px;
         &-item{
-            position: relative; padding-left: 24px; @include smallDepthTxt;
+            position: relative; padding-left: 24px; @include small1Typo;
             &::before{
                 content: '';display: inline-block;position: absolute; left: 0; top: 50%; width: 15px;height: 15px;@include backgroundImg('../../assets/images/icon/ico-check.svg', center, contain); transform: translateY(-50%);
             }
@@ -137,7 +137,7 @@
 }
 .button-input-wrap {
     display:flex;flex-wrap:wrap;gap:20px;
-    &>.default-txt {width:100%;}
+    &>.p2Typo {width:100%;}
     .btn-select{
         width: 240px;
     }
@@ -213,7 +213,7 @@
         margin-left: 10px;
         & + p{
             margin-top: 10px; width: 100%;
-            @include defaultTxt;
+            @include p2Typo;
         }
     }
 }
@@ -227,7 +227,7 @@
     .select{
         &-label{@extend %label;}
         &-default{
-            @extend %input; cursor: pointer; @include smallTxt;
+            @extend %input; cursor: pointer; @include small1Typo;
             &:disabled{color: #afafaf;cursor: default;background-image: url('../../assets/images/icon/ico-arrow-bottom-gray.svg');}
         }
     }
@@ -241,7 +241,7 @@
         padding: 0 30px 0 0;
         border:none;
         // @include backgroundImg('../../assets/images/icon/ico-arrow-bottom.svg', no-repeat calc(210px - 30px) center, 13px 13px );
-        @include normalTxt;
+        @include p2Typo;
     }
 
 // nice select
@@ -313,7 +313,7 @@
         }
     }
     label{
-        cursor: pointer; display: inline-flex; align-items: center; @include defaultTxt; color: $black;
+        cursor: pointer; display: inline-flex; align-items: center; @include p2Typo; color: $black;
         .ico-check{
             width: 24px; height: 24px;
             display: inline-block; padding-left:30px; position: relative; transition: all 0.3s ease-out;
@@ -326,16 +326,16 @@
             }
         }
         // 필수
-        strong{@include normalTxt01; margin-left: 5px;}
+        strong{@include p2Typo; margin-left: 5px;}
         //선택
-        b{@include defaultTxt;}
+        b{@include p2Typo;}
         .txt-vt {margin-right:5px;}
     }
     &.white{
         width:100%; padding:30px; border:2px solid $black;border-radius: 7px;
     }
     .link-underline{
-        @include defaultTxt; color: $black !important; text-decoration: underline;
+        @include p2Typo; color: $black !important; text-decoration: underline;
     }
 }
 //btn-check-type2
@@ -369,7 +369,7 @@
             color:$black; font-weight: 600;
         }
     }
-    label{border: 1px solid $gray02; cursor: pointer; padding:16px 0; min-width:154px; text-align: center; border-radius: 7px;  display: inline-block; height:58px; @include defaultTxt;
+    label{border: 1px solid $gray02; cursor: pointer; padding:16px 0; min-width:154px; text-align: center; border-radius: 7px;  display: inline-block; height:58px; @include p2Typo;
     }
 
 }
@@ -384,7 +384,7 @@
     }
     label{
         display: inline-flex; align-items: center; cursor: pointer;
-        span{@include normalTxt; font-weight: 600; }
+        span{@include p2Typo; font-weight: 600; }
         &::before {
             content: ''; display: inline-block; width: 20px; height: 20px; margin-right:4px;  @include backgroundImg('../../assets/images/icon/ico-checkbox.svg', center, contain);
         }
@@ -396,7 +396,7 @@
 //라디오 버튼 타이틀
 .radio-group-wrap{
     .group-tit{
-        @include normalTxt; margin-bottom: 16px;
+        @include p2Typo; margin-bottom: 16px;
     }
     & + .radio-group-wrap{
         margin-top: 50px;
@@ -413,7 +413,7 @@
         }
     }
     label{
-        @include defaultTxt; font-weight: 600; cursor: pointer;
+        @include p2Typo; font-weight: 600; cursor: pointer;
         display: inline-flex; align-items: center; justify-content: center; padding:0 40px; height: 58px;  border-radius:7px; border:1px solid $gray02; background: $white; min-width:120px;
     }
 }
@@ -423,7 +423,7 @@
         @include hidden;
         clip: rect(0 0 0 0);
         &:checked + label {
-        @include normalTxt; color:$purple;
+        @include p2Typo; color:$purple;
         }
          &:checked + label span{
             border:0;
@@ -433,7 +433,7 @@
         }
     }
     label{
-        position: relative;  display: flex; align-items: center; cursor: pointer; @include normalTxt;
+        position: relative;  display: flex; align-items: center; cursor: pointer; @include p2Typo;
         span{
             width:24px; height:24px; border-radius:50%; border:1px solid $gray02;  position: relative; transition: all 0.3s ease-out; margin-right:8px; flex-shrink: 0; transition: all 0.3s ease-out; background: $white;
             &::after{
@@ -451,7 +451,7 @@
     margin-bottom:39px;
     .input-label {display: block; margin-bottom: 10px; @extend %label;}
     .box-textarea{
-        width: 100%;height:150px; box-sizing:border-box; @include defaultTxt;  border: 1px solid $gray02; border-radius: 7px;transition: border-color .3s ease; display: flex; position: relative;
+        width: 100%;height:150px; box-sizing:border-box; @include p2Typo;  border: 1px solid $gray02; border-radius: 7px;transition: border-color .3s ease; display: flex; position: relative;
         .input-default{
            width: 100%; height:100%; resize:none; padding: 16px 20px !important; background: $white; border:none; border-radius: 0; padding:0;
         }
@@ -475,10 +475,10 @@
     .txt-error{display: none;}
     &.error{
         .box-textarea{border-color: $red;}
-        .txt-error{display:block; margin-top: 10px; @include defaultTxt; color: $red; text-align: left;}
+        .txt-error{display:block; margin-top: 10px; @include p2Typo; color: $red; text-align: left;}
     }
     textarea::placeholder {
-        @include smallDepthTxt2;
+        @include small1Typo;
         opacity: 1; /* 파이어폭스에서 뿌옇게 나오는 현상을 방지하기 위한 css */
     }
     textarea::-webkit-input-placeholder {color:$gray05;}
@@ -486,11 +486,11 @@
     textarea:-mos-input-placeholder {color:$gray05;}
 }
 
-.top-txt {padding-bottom:30px;margin-bottom:40px;border-bottom:1px solid $gray02;@include mainTxt;}
+.top-txt {padding-bottom:30px;margin-bottom:40px;border-bottom:1px solid $gray02;@include p1Typo;}
 .top-txt-group {
     margin-bottom:20px;
      .top-txt {margin-bottom:10px;padding-bottom:0;border-bottom:none;}
-     .txt {@include defaultTxt;}
+     .txt {@include p2Typo;}
 }
 
 .rq-form {
@@ -501,12 +501,12 @@
        margin-bottom: 0; padding-bottom: 0; border-bottom: none;
     }
     // margin-bottom: 50px; padding-bottom: 40px; border-bottom: 1px solid $gray02;
-    .main-txt-group {
+    .p1Typo-group {
         margin-bottom:40px;padding-bottom:30px;border-bottom:1px solid $gray02;
-        p {@include defaultTxt; line-height: 1.5; margin-top:10px;}
+        p {@include p2Typo; line-height: 1.5; margin-top:10px;}
     }
     .approve-form { margin-top:40px;}
-    .form-tit {margin:0 0 16px;@include normalTxt;}
+    .form-tit {margin:0 0 16px;@include p2Typo;}
 
     //input
     .radio-group-wrap,
@@ -526,7 +526,7 @@
     .box-attach {margin:40px 0 0;}
 
     .group-wrap {
-        .group-tit {margin-bottom:16px;@include normalTxt;}
+        .group-tit {margin-bottom:16px;@include p2Typo;}
     }
     .textarea-wrap {
         .box-input {margin-top: 0; overflow:hidden;}
@@ -543,7 +543,7 @@
     }
     .etc-input {margin-top:16px;}
     .email-input {
-        label {@include normalTxt;}
+        label {@include p2Typo;}
     }
     .radio-group-wrap {
         &+.box-input {margin-top: 40px;}
@@ -560,7 +560,7 @@
         }
         .box-input {
             margin-top: 0;
-            &+.txt {margin-top:10px;@include defaultTxt;}
+            &+.txt {margin-top:10px;@include p2Typo;}
         }
     }
     .box-select-wrap {
@@ -601,14 +601,14 @@
     }
     p {
         &.bang-notice {
-            margin-top:40px;padding-left:0;background:none;@include defaultTxt;
+            margin-top:40px;padding-left:0;background:none;@include p2Typo;
             &+.bang-notice {margin-top:10px;}
         }
     }
     ul {
         &.bang-notice {
             margin-top:40px;
-            li {padding-left:0;background:none;@include defaultTxt;}
+            li {padding-left:0;background:none;@include p2Typo;}
         }
     }
     .inner {
@@ -664,7 +664,7 @@
     .no-result {
         .no-result-txt {
             @include backgroundImg('../../assets/images/icon/ico-board-no-data.svg', center, 120px 120px);
-            @include mainTxt;
+            @include p1Typo;
         }
     }
 
@@ -747,7 +747,7 @@
         }
         &>.approve-form-wrap {
             position:relative;padding-left:200px;
-            .wrap-tit {position:absolute;left:0;top:16px;width:190px;@include normalTxt;}
+            .wrap-tit {position:absolute;left:0;top:16px;width:190px;@include p2Typo;}
         }
         &>.input-file {
             display:flex;flex-flow:wrap;gap:0 20px;position:relative;margin-top:40px;padding-left:200px;
@@ -782,9 +782,9 @@
 
 // 파일첨부 input
 .box-attach {
-    .box-tit {display:block;@include normalTxt;margin-bottom:10px;}
+    .box-tit {display:block;@include p2Typo;margin-bottom:10px;}
     input[type="file"] {@include hidden;}
-    .input-file {@include defaultTxt;margin-top:16px;}
+    .input-file {@include p2Typo;margin-top:16px;}
     .attached-list {
         margin-top:20px;
         li {

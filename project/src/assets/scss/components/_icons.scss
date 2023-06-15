@@ -4,7 +4,7 @@
     display:flex;align-items:center;gap:0 5px;flex-wrap:wrap;
     .chip {
         display:inline-flex;border-radius:5px;height:21px;padding:0px 6px;text-align:center;
-        @include chipTxt;
+        @include small2Typo;
     }
     img{height: 20px; display: block;}
 }

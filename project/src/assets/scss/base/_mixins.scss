@@ -66,7 +66,7 @@
 }
 
 // TEXT
-@mixin text($weight, $size, $height: 1.5, $color: $gray05, $spacing: 0) {
+@mixin text($weight, $size, $height, $color, $spacing) {
     color: $color;
     font-size: $size;
     font-weight: $weight;

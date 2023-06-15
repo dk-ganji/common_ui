@@ -31,7 +31,7 @@ table, caption, tbody, tfoot, thead, tr, th, td, button,figure,figcaption,textar
 	padding: 0;
 	border: 0;
 	outline: 0;
-	font-family: 'Pretendard', 'Malgun Gothic', Sans-serif;
+	font-family: 'NotoSans', 'Malgun Gothic', Sans-serif;
 	font-weight: 400;
 	font-size: 16px;
 	color: $gray05;
@@ -59,7 +59,7 @@ input{
 	-webkit-apperance: none;
 	display: inline-block;
 	box-sizing: border-box;
-	font-family: 'Pretendard';
+	font-family: 'NotoSans';
 	background-color: $white;
 }
 input[type=text]::-ms-clear {
@@ -74,18 +74,18 @@ input[type="number"] {
     -moz-appearance: textfield;
 }
 select{
-	font-family: 'Pretendard', 'Malgun Gothic', Sans-serif;
+	font-family: 'NotoSans', 'Malgun Gothic', Sans-serif;
 	appearance: none;
 }
 button{
 	border:none;
 	cursor:pointer;
-	font-family: 'Pretendard';
+	font-family: 'NotoSans';
 }
 i {font-style: normal;}
 a {
 	text-decoration: none;
-	font-family: 'Pretendard';
+	font-family: 'NotoSans';
 	font-weight: 400;
 	cursor:pointer;
 }

@@ -1,28 +1,28 @@
 @charset "UTF-8";
 
 @font-face {
-	font-family: 'Pretendard';
-	font-weight: 100;
+	font-family: 'NotoSans';
+	font-weight: 300;
 	font-display: block;
-	src: local('Pretendard Regular'), url('../../assets/fonts/Pretendard-Light.woff2') format('woff2');
+	src: local('NotoSansKR Regular'), url('../../assets/fonts/NotoSansKR-Regular.woff2') format('woff2');
 }
 @font-face {
-	font-family: 'Pretendard';
-	font-weight: 400;
+	font-family: 'NotoSans';
+	font-weight: 500;
 	font-display: block;
-	src: local('Pretendard Regular'), url('../../assets/fonts/Pretendard-Regular.woff2') format('woff2');
-}
-
-@font-face {
-	font-family: 'Pretendard';
-	font-weight: 600;
-	font-display: block;
-	src: local('Pretendard SemiBold'), url('../../assets/fonts/Pretendard-SemiBold.woff2') format('woff2');
+	src: local('NotoSansKR Medium'), url('../../assets/fonts/NotoSansKR-Medium.woff2') format('woff2');
 }
 
 @font-face {
-	font-family: 'Pretendard';
+	font-family: 'NotoSans';
 	font-weight: 700;
 	font-display: block;
-	src: local('Pretendard Bold'), url('../../assets/fonts/Pretendard-Bold.woff2') format('woff2');
+	src: local('NotoSansKR Bold'), url('../../assets/fonts/NotoSansKR-Bold.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'SegoeUI';
+	font-weight: 700;
+	font-display: block;
+	src: local('Segoe UI'), url('../../assets/fonts/SegoeUI.woff2') format('woff2');
 }

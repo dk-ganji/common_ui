@@ -1,80 +1,78 @@
 @charset "UTF-8";
 
 // Typography 정의
-// * 07.29 : 디자인단과 협의하에 line-Height:1 삭제(기본값 적용되도록)
 
 /* 키 비주얼 타이틀 - 메인(H1)
 SemiBold / Font 50px / #191919 / 자간 -0.3px / Line-Height 1 */
-@mixin mainVisualTxt {
-    @include text(600,50px,normal,$black, -0.3px);
+@mixin h1Typo {
+    @include text(700,32px,1.5625,$black, -0.5px);
 }
 /* 컨텐츠 페이지 타이틀 (H2)
 Bold / Font 36px / #191919 / 자간 -0.3px / Line-Height 1 */
-@mixin mainContsTitle {
-    @include text(700,36px,normal,$black,-0.7px);
+@mixin h2Typo {
+    @include text(500,26px,1.5384,$black,-0.5px);
 }
 
 /* 헤더 GNB 타이틀 & 프로세스 타이틀 (H3)
 SemiBold / Font 30px / #191919 / 자간 -0.3px / Line-Height 1  */
-@mixin contsTitle {
-    @include text(600,30px,normal,$black,-0.3px);
+@mixin h3Typo {
+    @include text(700,22px,1.5454,$black,-0.5px);
 }
 /* 그룹타이틀 & 팝업 타이틀 (H4)
 SemiBold / Font 24px / #191919 / 자간 -0.3px /  Line-Height 1  */
-@mixin subContsTitle {
-    @include text(600,24px,normal,$black,-0.4px);
+@mixin h4Typo {
+    @include text(700,20px,1.6,$black,-0.5px);
 }
+
+@mixin h5Typo {
+    @include text(500,18px,1.666,$black,-0.5px);
+}
+
 /* 컨텐츠 타이틀 (H5)
 SemiBold / Font 20px / #191919 / 자간 -0.3px / Line-Height 1  */
-@mixin mainTxt {
-    @include text(600,20px,normal,$black,-0.4px);
+@mixin p1Typo {
+    @include text(300,16px,1.75,$black,-0.5px);
 }
 /* 본문 (기본)
 SemiBold / Font 16px / #191919 / 자간 -0.3px / Line-Height 1 */
-@mixin normalTxt {
-    @include text(600,16px,normal,$black,-0.3px);
+@mixin p2Typo {
+    @include text(300,15px,1.733,$black,-0.5px);
 }
 /* 본문 (기본)-400
 Regular / Font 16px / #191919 / 자간 -0.3px / Line-Height 1 */
-@mixin normalTxt01 {
-    @include text(400,16px,normal,$black,-0.3px);
-}
-/* 밝은 본문 (기본)
-Regular / Font 16px / #666 / 자간 -0.3px / Line-Height 1 */
-@mixin defaultTxt {
-    @include text(400,16px,normal,$gray05,-0.3px);
-}
+// @mixin p2Typo {
+//     @include text(300,16px,normal,$black,-0.3px);
+// }
+
 /* 최소 본문 - 진한
 SemiBold / Font 14px / #191919 / 자간 -1x / Line-Height 1 */
-@mixin smallTxt {
-    @include text(600,14px,normal,$black,-0.3px);
+@mixin small1Typo {
+    @include text(300,14px,1.7142,$black,-0.5px);
 }
 
 /* 최소 본문 - 중간
 Regular / Font 14px / #666 / 자간 -0.3px / Line-Height 1 */
-@mixin smallDepthTxt {
-    @include text(400,14px,normal,$gray05,-0.3px);
-}
+// @mixin small1Typo {
+//     @include text(300,14px,normal,$gray05,-0.3px);
+// }
 /* 최소 본문 - 약한(인풋플레이스 홀드 값)
 Regular / Font 14px / #959595 / 자간 -0.3px / Line-Height 1 */
-@mixin smallDepthTxt2 {
-    @include text(400,14px,normal,$gray04,-0.3px);
-}
+// @mixin small1Typo {
+//     @include text(300,14px,normal,$black,-0.3px);
+// }
 /* 예외 (Chip에 사용되는 폰트)
 Regular / Font 16px / #ffffff / 자간 -0.52px / Line-Height 36px */
-@mixin chipTxt {
-    @include text(400,16px,21px,$white,-0.3px);
+@mixin small2Typo {
+    @include text(300,12px,1.6666,$black,-0.5px);
 }
 
 
-.main-visual-title{@include mainVisualTxt;}
-.main-contents-title{@include mainContsTitle;}
-.contents-title{@include contsTitle;}
-.sub-contents-title{@include subContsTitle;}
-.main-txt{@include mainTxt;}
-.normal-txt{@include normalTxt;}
-.normal-txt01{@include normalTxt01;}
-.default-txt{@include defaultTxt;}
-.small-txt{@include smallTxt;}
-.small-depth-txt{@include smallDepthTxt;}
-.small-depth-txt2{@include smallDepthTxt2;}
+.h1Typo{@include h1Typo;}
+.h2Typo{@include h2Typo;}
+.h3Typo{@include h3Typo;}
+.h4Typo{@include h4Typo;}
+.h5Typo{@include h5Typo;}
+.p1Typo{@include p1Typo;}
+.p2Typo{@include p2Typo;}
+.small1Typo{@include small1Typo;}
+.small2Typo{@include small2Typo;}

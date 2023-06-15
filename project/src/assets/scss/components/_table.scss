@@ -7,7 +7,7 @@
         &:first-child {text-align:center;font-weight:600;vertical-align:middle;}
         &:nth-child(2) {padding-left:32px;}
         &:last-child {text-align:right;padding-right:24px; }
-        @include defaultTxt;color:$black;
+        @include p2Typo;color:$black;
     }
     &+.box-paging {display:block;margin-top:50px;}
 }
@@ -20,18 +20,18 @@
     dl {
         display:flex;align-items:center;flex-wrap:wrap;width:100%;
         dt {
-            width:50%;@include defaultTxt;
+            width:50%;@include p2Typo;
             &:nth-of-type(n+2){margin-top:5px;}
         }
         dd {
-            width:50%; text-align:right; @include defaultTxt;
+            width:50%; text-align:right; @include p2Typo;
             &:nth-of-type(n+2) {margin-top:5px;}
             *{@extend %fontInherit;}
         }
     }
     .item-title {
         padding-top: 20px;
-        *{@include normalTxt;}
+        *{@include p2Typo;}
     }
     .depth-02 {
         padding:0 40px 5px;
@@ -51,7 +51,7 @@
     .c-hotpink {
         padding: 0 40px;
         dt, dd {
-            @include normalTxt;color:$red; padding-top: 20px;
+            @include p2Typo;color:$red; padding-top: 20px;
         }
     }
     .table-default2{
@@ -63,10 +63,10 @@
     .table-result {
         background: $gray06;padding:20px 40px;
         .txt-vt{
-            @include subContsTitle;
+            @include h4Typo;
             *{@extend %fontInherit;}
         }
-        * {@include mainTxt;}
+        * {@include p1Typo;}
     }
     & + .table-default2{
         margin-top: 30px;
@@ -74,7 +74,7 @@
 }
 
 p.bang-notice {
-    margin-top:10px;@include defaultTxt;
+    margin-top:10px;@include p2Typo;
 }
 
 ul.bang-notice {
@@ -90,22 +90,22 @@ ul.bang-notice {
 .box-list{
     margin-top:50px;
     &.no-margin{margin-top: 0;}
-    h2 {margin-bottom:20px;@include mainTxt;}
+    h2 {margin-bottom:20px;@include p1Typo;}
 }
 
 .table-list-wrap {
-    .table-title {margin-bottom:20px; @include mainTxt;}
+    .table-title {margin-bottom:20px; @include p1Typo;}
     .table-list {
         width:100%;margin:0 auto;border-top:1px solid $black;box-sizing:border-box;text-align:center;table-layout:fixed;
         thead {border-bottom:1px solid $gray02;}
         th {
             padding:20px 0;vertical-align:middle;
-            @include normalTxt;color:$black;
+            @include p2Typo;color:$black;
         }
         td {
             padding:20px 0;border-bottom:1px solid $gray02;vertical-align:middle;
-            @include defaultTxt;color:$black;
-            a {display:inline-block;max-width:100%;@include defaultTxt;color:$black;vertical-align:middle;}
+            @include p2Typo;color:$black;
+            a {display:inline-block;max-width:100%;@include p2Typo;color:$black;vertical-align:middle;}
             &.subject {text-align:left;}
         }
     }
@@ -135,7 +135,7 @@ ul.bang-notice {
 .box-table {
     .table-title{
         padding:0 0 30px 40px;border-bottom:1px solid $gray02;
-        @include mainTxt;
+        @include p1Typo;
     }
     // Table Type01(Basic)
     .table-type-01 {
@@ -143,16 +143,16 @@ ul.bang-notice {
         tr {
             th {
                 padding:20px;
-                @include normalTxt;color:$black;text-align:left;
+                @include p2Typo;color:$black;text-align:left;
             }
             td {
                 padding:20px;
-                @include defaultTxt;color:$black;text-align:right;
+                @include p2Typo;color:$black;text-align:right;
             }
             &.is-depth {
                 * {
                     padding-top:0;
-                    @include smallTxt;
+                    @include small1Typo;
                 }
             }
             &.emp-txt {
@@ -173,17 +173,17 @@ ul.bang-notice {
             border-bottom:2px solid $gray02;
             th {
                 padding:40px 30px;
-                @include normalTxt;color:$black;text-align:left;
+                @include p2Typo;color:$black;text-align:left;
             }
             td {
                 padding:40px 30px;vertical-align:middle;
-                @include defaultTxt;color:$black;text-align:right;
+                @include p2Typo;color:$black;text-align:right;
             }
             &.bg-gray {
                 border:none;
                 td, th {
                     padding:22px 30px;background-color:$gray01;
-                    @include defaultTxt;
+                    @include p2Typo;
                 }
                 th {border-radius:14px 0 0 14px;}
                 td {border-radius:0 14px 14px 0;}
@@ -209,11 +209,11 @@ ul.bang-notice {
         width: 100%;
         th {
             background-color: $gray06; padding: 20px 0px; text-align: center;
-            @include normalTxt;vertical-align: middle;
+            @include p2Typo;vertical-align: middle;
         }
         td{
             padding: 20px 0px; border-bottom: 1px solid $gray02; vertical-align: middle;text-align: center;
-            @include defaultTxt; color: $black;
+            @include p2Typo; color: $black;
         }
         &.center{
             th, td{
@@ -227,12 +227,12 @@ ul.bang-notice {
         td {
             vertical-align: middle; padding: 40px 0; border-bottom: 2px solid $gray02;
             strong{
-                display: block; @include defaultTxt; font-weight: 400;
+                display: block; @include p2Typo; font-weight: 400;
                 & + strong{margin-top:10px; }
                 & + span{margin-top:10px; }
             }
-            span{display: block;@include smallDepthTxt;}
-            button{@include smallDepthTxt; text-decoration: underline;}
+            span{display: block;@include small1Typo;}
+            button{@include small1Typo; text-decoration: underline;}
             &:last-of-type{text-align: right;}
         }
     }
@@ -241,11 +241,11 @@ ul.bang-notice {
         width: 100%; margin:10px 0;
         th {
             background-color: $gray06; padding: 20px 0px; text-align: center;
-            @include normalTxt;vertical-align: middle;
+            @include p2Typo;vertical-align: middle;
         }
         td{
             padding: 20px 0px; border-bottom: 1px solid $gray02; vertical-align: middle;text-align: center;
-            @include defaultTxt; color: $black;
+            @include p2Typo; color: $black;
         }
         &.center{
             th, td{
@@ -256,7 +256,7 @@ ul.bang-notice {
     }
 // Table Type02
 .radio-block {
-    .default-txt {
+    .p2Typo {
         margin-bottom:20px;
         .txt-vt {@extend %fontInherit;}
     }
@@ -268,7 +268,7 @@ ul.bang-notice {
             label {
                 align-items:center;/*padding:40px;*/padding:20px 30px;transition:background-color 0.3s, color 0.3s;
                 span {margin-right:20px;}
-                p {@include defaultTxt;}
+                p {@include p2Typo;}
             }
             input:checked ~ label {
                 background-color:#f9f5ff;
@@ -292,8 +292,8 @@ ul.bang-notice {
 .box-paging {
     margin:70px 0 0;text-align:center;
     .btn-text-more {
-        @include mainTxt;
-        &>span {@include mainTxt;}
+        @include p1Typo;
+        &>span {@include p1Typo;}
     }
 }
 
@@ -306,22 +306,22 @@ ul.bang-notice {
         td {
             a {
                 display:inline-block;overflow:hidden;text-overflow:ellipsis;max-width:100%;white-space:nowrap;text-align:left;
-                @include defaultTxt;color:$black;
+                @include p2Typo;color:$black;
             }
-            .point {@include normalTxt;color:$purple;}
+            .point {@include p2Typo;color:$purple;}
         }
         .notice {
-            a {@include normalTxt;}
-            .point {@include normalTxt;color:$purple;}
+            a {@include p2Typo;}
+            .point {@include p2Typo;color:$purple;}
         }
     }
     .box-btn {margin-top:50px;text-align:center;}
     //검색결과안내
     .no-result {
         .no-result-txt {
-            display:block;padding-top:270px;@include mainTxt;text-align:center;
+            display:block;padding-top:270px;@include p1Typo;text-align:center;
             @include backgroundImg('../../assets/images/icon/ico-board-no-data.svg', center center, 120px 120px);
-            .small-txt {display:block;margin-top:10px;@include defaultTxt;text-align:center;}
+            .small1Typo {display:block;margin-top:10px;@include p2Typo;text-align:center;}
         }
     }
     //상세
@@ -329,21 +329,21 @@ ul.bang-notice {
         .list-view {
             dt {
                 padding:30px 0;border-bottom:1px solid $gray02;
-                .view-tit {display:block;margin-bottom:10px;@include subContsTitle;}
-                &>time {@include smallDepthTxt2;}
+                .view-tit {display:block;margin-bottom:10px;@include h4Typo;}
+                &>time {@include small1Typo;}
 
                 &.date-right {
                     display:flex;justify-content:space-between;gap:30px 50px;
-                    &>.date {padding-top:5px;@include defaultTxt;color:$gray04;white-space:nowrap;}
+                    &>.date {padding-top:5px;@include p2Typo;color:$gray04;white-space:nowrap;}
                 }
             }
             dd {
-                padding:40px 0;border-bottom:1px solid $gray02;@include defaultTxt;color:$black;
-                .view-txt {@include defaultTxt;color:$black;line-height:1.5;}
+                padding:40px 0;border-bottom:1px solid $gray02;@include p2Typo;color:$black;
+                .view-txt {@include p2Typo;color:$black;line-height:1.5;}
                 .mov-detail{
                     min-height: 300px;
                     .view-img {margin: 30px 0;}
-                    .view-txt {@include defaultTxt;color:$black;}
+                    .view-txt {@include p2Typo;color:$black;}
                     img {max-width:70%;}
                 }
             }
@@ -352,9 +352,9 @@ ul.bang-notice {
         .siblings-article {
             li {
                 display:flex;flex-direction:row;padding:30px 40px;border-bottom:1px solid $gray02;
-                &>b {width:120px;@include defaultTxt; font-weight: 600; text-align:left;}
-                &>a {overflow:hidden;text-overflow:ellipsis;width:calc(100% - 120px);@include smallTxt; text-align:left;white-space:nowrap;}
-                .no-article {width:calc(100% - 120px);@include smallTxt;text-align:left;}
+                &>b {width:120px;@include p2Typo; font-weight: 600; text-align:left;}
+                &>a {overflow:hidden;text-overflow:ellipsis;width:calc(100% - 120px);@include small1Typo; text-align:left;white-space:nowrap;}
+                .no-article {width:calc(100% - 120px);@include small1Typo;text-align:left;}
             }
         }
     }
@@ -364,8 +364,8 @@ ul.bang-notice {
 .board-info {
     display:flex;justify-content: flex-end;align-items:baseline;margin-bottom:20px; flex:1; position: relative;
     .box-info {
-            @include normalTxt;text-align:left; position:absolute; bottom:0; left:0;
-        strong {@include normalTxt;color:$purple;}
+            @include p2Typo;text-align:left; position:absolute; bottom:0; left:0;
+        strong {@include p2Typo;color:$purple;}
     }
     .box-input {max-width:300px;margin:0 !important;}
 }
@@ -373,9 +373,9 @@ ul.bang-notice {
 //결과없음 또는 에러
 .no-result {
     .no-result-txt {
-        display:block;padding-top:270px;@include mainTxt;text-align:center;
+        display:block;padding-top:270px;@include p1Typo;text-align:center;
         @include backgroundImg('../../assets/images/icon/ico-board-no-data.svg', center 100px, 120px 120px);
-        .small-txt {display:block;margin-top:20px;@include defaultTxt;text-align:center;}
+        .small1Typo {display:block;margin-top:20px;@include p2Typo;text-align:center;}
         &.not-exist {
             background-image: url('../../assets/images/icon/ico-not-exist.svg');
         }
@@ -384,9 +384,9 @@ ul.bang-notice {
 
 .no-search-result {
     .no-search-result-txt {
-        display:block;padding-top:270px;@include mainTxt;text-align:center;
+        display:block;padding-top:270px;@include p1Typo;text-align:center;
         @include backgroundImg('../../assets/images/icon/ico-search-dot.svg', center  100px, 120px 120px);
-        .small-txt {display:block;margin-top:20px;@include defaultTxt;text-align:center;}
+        .small1Typo {display:block;margin-top:20px;@include p2Typo;text-align:center;}
         &.empty-box{
              @include backgroundImg('../../assets/images/icon/ico-board-no-data.svg',center center,120px 120px);
         }
@@ -396,8 +396,8 @@ ul.bang-notice {
 
 .error-result {
     .error-result-txt {
-        display:block;padding:270px 0 100px;@include mainTxt;text-align:center;
+        display:block;padding:270px 0 100px;@include p1Typo;text-align:center;
         @include backgroundImg('../../assets/images/icon/ico-plan-error.svg', center 100px, 120px 120px);
-        .small-txt {display:block;margin-top:10px;@include defaultTxt;text-align:center;}
+        .small1Typo {display:block;margin-top:10px;@include p2Typo;text-align:center;}
     }
 }

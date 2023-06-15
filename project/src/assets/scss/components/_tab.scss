@@ -12,7 +12,7 @@
             flex-shrink: 0; width: auto;
             a{
                 display: block; height: 60px; padding: 18px 40px; border-radius: 36px; background-color: $gray01; text-align: center; overflow: hidden;
-                @include mainTxt; color: $gray05;
+                @include p1Typo; color: $gray05;
                 &.on{
                     background-color: $purple; color: $white;
                 }
@@ -32,7 +32,7 @@
             li{
                 flex: 1;
                 a {
-                    @include mainTxt; color: $gray05;background: none; border-bottom: 2px solid $gray02; border-radius: 0;
+                    @include p1Typo; color: $gray05;background: none; border-bottom: 2px solid $gray02; border-radius: 0;
                     span{@extend %fontInherit;}
                     &.on{
                         background: none; color: $purple; border-color: $purple;
@@ -60,7 +60,7 @@
             flex-shrink: 0; width: auto;
             a{
                 display: block; padding: 18px 40px; border-radius: 36px; background-color: $gray01; text-align: center;
-                @include mainTxt; color: $gray05;
+                @include p1Typo; color: $gray05;
                 &.on{
                     background-color: $purple; color: $white;
                 }

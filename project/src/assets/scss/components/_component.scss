@@ -13,23 +13,23 @@
     }
     &.bottom-sheet-wrap {
         .page-tit{
-            h1{@include subContsTitle;}
+            h1{@include h4Typo;}
         }
     }
     .agree-cont{
-        @include defaultTxt;
+        @include p2Typo;
         & + .agree-cont {margin-top: 30px;}
         h3{
-        @include mainTxt;
+        @include p1Typo;
         }
         & > p{
-            @include defaultTxt; margin-top: 10px;
+            @include p2Typo; margin-top: 10px;
         }
         .notification{
             margin-top: 10px;
         }
         b{
-            @include defaultTxt; font-weight: 400;
+            @include p2Typo; font-weight: 400;
         }
         & + .table-list-wrap{
             margin-top:30px;
@@ -47,7 +47,7 @@
             border: 0;
             th {
                 background-color: #eff1f5;
-                @include mainTxt;
+                @include p1Typo;
             }
             td {
                 padding: 30px 0; color: $gray05;
@@ -63,13 +63,13 @@
     .info-desc {
         &>div {
             margin-bottom:30px;
-            &>h3 {margin-bottom:10px;@include normalTxt;}
+            &>h3 {margin-bottom:10px;@include p2Typo;}
             &>p {
-                margin-bottom:10px;@include defaultTxt;
+                margin-bottom:10px;@include p2Typo;
                 &+.notification {margin-bottom:10px;}
             }
             .notification {
-                strong {@include defaultTxt;}
+                strong {@include p2Typo;}
 
             }
         }
@@ -99,10 +99,10 @@
                     li {
                         display: flex; flex-direction: column; gap: 10px; justify-content: center; padding-left: 100px; height: 80px;
                         strong{
-                            @include normalTxt;
+                            @include p2Typo;
                         }
                         span{
-                            @include defaultTxt;
+                            @include p2Typo;
                         }
                         &.faq-call{
                             @include backgroundImg('../../assets/images/icon/ico-phone-call.svg',left center, 80px 80px);
@@ -127,7 +127,7 @@
             display: inline-block; width: 24px; height: 24px; border-radius: 50%; background-color: $gray02; color: $white; font-weight: 600; line-height: 24px; text-align: center;
         }
         .page-txt{
-            @include normalTxt01; margin-left: 5px;
+            @include p2Typo; margin-left: 5px;
         }
         &.on{
             width: auto;
@@ -139,11 +139,11 @@
 // bg 박스
 .bg-box{
     padding: 40px; background-color: #f7f8fa;border-radius:10px;
-    .mainTxt{
-        @include mainTxt; font-weight: 700; display: block;
+    .p1Typo{
+        @include p1Typo; font-weight: 700; display: block;
     }
     p{
-        @include defaultTxt; margin-top: 10px;
+        @include p2Typo; margin-top: 10px;
     }
     .box-btn {margin-top: 20px;}
 }
@@ -151,7 +151,7 @@
 .no-result-type-02{
     display: flex; align-items: center; justify-content: center; padding: 100px 0; border-top: 1px solid $black;
     p{
-        @include mainTxt;
+        @include p1Typo;
     }
 }
 
@@ -161,8 +161,8 @@
     .detail {
         display:inline-flex;align-items:baseline;margin-right:70px;
         strong {
-            margin-right:30px;@include contsTitle;color:$purple;
-            span {@include contsTitle;}
+            margin-right:30px;@include h3Typo;color:$purple;
+            span {@include h3Typo;}
         }
         a {display:inline-flex;align-items:center;}
     }
@@ -174,9 +174,9 @@
             margin-bottom: 30px;
             dt{
                 margin-bottom: 10px;
-                @include mainTxt;
+                @include p1Typo;
             }
-            dd {@include mainTxt;color: $gray05;font-weight:400;}
+            dd {@include p1Typo;color: $gray05;font-weight:400;}
         }
         .how {
             display:inline-flex;margin-bottom:3px;
@@ -186,16 +186,16 @@
             }
             dd {
                 display:inline-flex;word-break: keep-all;
-                a {@include normalTxt;}
+                a {@include p2Typo;}
             }
         }
-        button,.box-btn {position:absolute;right:40px;bottom:39px;padding:0 30px;width:auto;max-width:none;@include smallTxt;}
+        button,.box-btn {position:absolute;right:40px;bottom:39px;padding:0 30px;width:auto;max-width:none;@include small1Typo;}
         &.type-02{
             .top{
                 display: flex; justify-content: space-between; align-items: flex-start; padding-bottom: 40px; border-bottom: 1px solid $gray02; margin-bottom: 20px;
                 .period{
                     margin: 0;
-                    dd{@include defaultTxt;}
+                    dd{@include p2Typo;}
                 }
                 .detail{
                     margin-right: 0;
@@ -239,17 +239,17 @@
             dl {
                 display:inline-flex;
                 &+dl {margin-left:84px;}
-                dt {margin-right:20px;@include mainTxt;}
+                dt {margin-right:20px;@include p1Typo;}
                 dd {
-                    @include mainTxt;
-                    span {@include mainTxt;}
+                    @include p1Typo;
+                    span {@include p1Typo;}
                 }
             }
         }
-        h2 {display:block;margin-bottom:30px;@include normalTxt;}
+        h2 {display:block;margin-bottom:30px;@include p2Typo;}
         .period {
             margin-bottom:30px;
-            dt {margin-bottom:10px;@include normalTxt;}
+            dt {margin-bottom:10px;@include p2Typo;}
             dd {color: $gray05;}
         }
     }
@@ -267,10 +267,10 @@
                     }
                 }
                 dt {
-                    @include mainTxt;
+                    @include p1Typo;
                 }
                 dd {
-                    @include mainTxt;
+                    @include p1Typo;
                     *{@extend %fontInherit;}
                 }
             }
@@ -278,11 +278,11 @@
                 display: flex; justify-content: space-between; align-items: center;
                 .detail{
                     &-desc{
-                        @include mainTxt;
+                        @include p1Typo;
                         *{@extend %fontInherit;}
                     }
                     &-total{
-                        @include contsTitle;
+                        @include h3Typo;
                         *{@extend %fontInherit;}
                     }
                 }
@@ -293,15 +293,15 @@
         display:flex;justify-content:space-between; align-items: center;
         .period {
             display:flex;justify-content:center;flex-direction:column;
-            dt {@include mainTxt;}
-            dd {margin-top:10px;@include mainTxt;color: $gray05;font-weight:400;}
+            dt {@include p1Typo;}
+            dd {margin-top:10px;@include p1Typo;color: $gray05;font-weight:400;}
         }
         .detail {
             align-items:center;margin-right:0;
             strong {margin-right:0;}
         }
         &.type-02 {
-            .main-txt{
+            .p1Typo{
                 margin-bottom: 0;
             }
             .detail{
@@ -322,32 +322,32 @@
         margin-bottom:30px;
         strong {
             display: block; margin-bottom: 40px;
-            @include contsTitle; font-weight: 700;
+            @include h3Typo; font-weight: 700;
         }
         dl {
             dt {
                 margin-bottom: 10px;
-                h1 {@include mainTxt;}
+                h1 {@include p1Typo;}
             }
-            dd {@include mainTxt;color:$gray05;font-weight:400;}
+            dd {@include p1Typo;color:$gray05;font-weight:400;}
         }
     }
     &>.list {
         overflow:hidden;position:relative;margin-bottom:40px;
         h2 {
             position:absolute;left:0;bottom:0;display:flex;justify-content:space-between;align-items:center;width:100%;height:96px;padding:0 40px;border-bottom:2px solid $gray02;background:#eff1f5;
-            span {@include mainTxt;}
-            strong {@include contsTitle;color:$purple;}
+            span {@include p1Typo;}
+            strong {@include h3Typo;color:$purple;}
             &+dl {margin-bottom:96px;border-bottom:0;}
         }
         dl {
            padding:20px 0;border-top:1px solid $gray02;border-bottom:1px solid $gray02;font-size:0;
             dt {
-                display:inline-block;width:calc(100% - 180px);padding:10px 0 10px 30px;@include defaultTxt;
+                display:inline-block;width:calc(100% - 180px);padding:10px 0 10px 30px;@include p2Typo;
                 &.depth::before {content:'-';display:inline-block;margin-right:5px;}
             }
-            dd {display: inline-block; width:180px;padding:10px 30px 10px 0;;text-align: right;@include defaultTxt;}
-            .tit {@include normalTxt;}
+            dd {display: inline-block; width:180px;padding:10px 30px 10px 0;;text-align: right;@include p2Typo;}
+            .tit {@include p2Typo;}
         }
     }
     .btn-wrap {
@@ -364,7 +364,7 @@
     padding-bottom: 170px;
     @include backgroundImg('../../assets/images/icon/ico-opening-success.svg', center bottom, 120px 120px);
     h2{
-        @include subContsTitle;
+        @include h4Typo;
     }
 
     &.center-txt{
@@ -391,7 +391,7 @@
 .box-icon-info{
     position: relative; padding: 58px 40px;border-radius: 10px; border: 1px solid $gray02;
     p{
-        @include defaultTxt; margin-top: 10px;
+        @include p2Typo; margin-top: 10px;
     }
     .icon-wrap{
         position: absolute; right: 40px; bottom: 0;
@@ -404,8 +404,8 @@
 .banner{
     display: flex; justify-content: space-between; align-items: center; width:100%; background: $lightpurple; padding:0px 130px; height: 120px;
     .left{
-        .title{ @include mainTxt;}
-        .desc{ @include defaultTxt; margin-top: 10px}
+        .title{ @include p1Typo;}
+        .desc{ @include p2Typo; margin-top: 10px}
     }
     .right{
         position: relative;
@@ -432,8 +432,8 @@
         .banner-wrap {
             display:flex;justify-content:space-between;align-items:center;width:1280px;height:200px;margin:0 auto;
             .left {
-                .title {@include mainContsTitle;}
-                .desc {margin-top:10px;@include subContsTitle;font-weight:normal;}
+                .title {@include h2Typo;}
+                .desc {margin-top:10px;@include h4Typo;font-weight:normal;}
             }
             .right{
                 display:flex;flex-flow:column; justify-content:center;
@@ -461,7 +461,7 @@
                 position: absolute; left: 0; top: 0; width: 175px; height: 100%;
                 img{width: 100%;}
             }
-            .normal-txt{
+            .p2Typo{
                 display: block; margin-top: 10px;
             }
         }
@@ -488,27 +488,27 @@
     //타이틀
     .unit-tit-page {
         margin:0 0 50px;
-        @include mainContsTitle;
+        @include h2Typo;
     }
     .unit-tit-b {
         display:block;margin:70px 0 10px;
-        @include contsTitle;
+        @include h3Typo;
     }
     .unit-tit-m {
         display:block;margin:50px 0 10px;
-        @include mainTxt;
+        @include p1Typo;
         &>a {font-size:inherit;}
     }
     .unit-tit-s {
         display:block;margin:0 0 20px;
-        @include normalTxt;
+        @include p2Typo;
         &>a {font-size:inherit;}
     }
 
     //컨텐츠
     .unit-txt {
         display:block;margin-top:10px;
-        @include defaultTxt;
+        @include p2Typo;
 
         &:first-of-type {margin-top:0;}
 
@@ -542,7 +542,7 @@
             .unit-box-tit {
                 margin-bottom:20px;
                 .box-tit {
-                    display:block;@include subContsTitle;
+                    display:block;@include h4Typo;
                     &+.unit-txt {margin-top:10px;}}
             }
             .unit-box-ct {padding-top:30px;}
@@ -552,7 +552,7 @@
             .unit-box-tit {
                 margin-bottom:20px;
                 .box-tit {
-                    display:block;@include subContsTitle;
+                    display:block;@include h4Typo;
                     &+.unit-txt {margin-top:10px;}
                 }
             }
@@ -598,7 +598,7 @@
 .feature {
     display:flex; flex-direction:row; margin:0 0 6px 0;
     &>span {
-        position:relative;margin-right:10px;padding-left:25px;@include defaultTxt;white-space:nowrap;
+        position:relative;margin-right:10px;padding-left:25px;@include p2Typo;white-space:nowrap;
         &::before {content:'';position:absolute;left:0;top:50%; transform: translateY(-50%);width:20px;height:100%;}
         &.vol::before {@include backgroundImg('../../assets/images/icon/ico-data.svg', center center, auto 16px);}
         &.limit::before {@include backgroundImg('../../assets/images/icon/ico-call-fill.svg', center center, auto 24px);}
@@ -628,12 +628,12 @@
 //요금제 - 팝업
 .qos-guide {
     padding:40px; min-width:470px !important;
-    .qos-tit {display:block;margin-bottom:10px;@include normalTxt;}
-    .qos-txt {display:block;@include defaultTxt;color:$black;}
+    .qos-tit {display:block;margin-bottom:10px;@include p2Typo;}
+    .qos-txt {display:block;@include p2Typo;color:$black;}
     dl {
         display:flex;align-items:center;gap:10px;margin-top:10px;
         dt {width:40px;height:40px;}
-        dd {@include defaultTxt;color:$black;}
+        dd {@include p2Typo;color:$black;}
     }
     .notification {margin-top:20px;}
     .notice {margin-top:20px;}
@@ -650,7 +650,7 @@
         padding: 10px 20px;
         background: #f8f4ff;
         border-radius: 30px;
-        @include normalTxt;
+        @include p2Typo;
     }
 }
 
@@ -670,15 +670,15 @@
     .product-txt{
         padding: 28px 0;
         .product-title{
-            @include mainContsTitle;
+            @include h2Typo;
         }
         .product-price{
             display: flex; justify-content: flex-end; gap: 10px; align-items: flex-end; margin-top: 20px;
             b{
-                @include mainContsTitle; color: $purple;
+                @include h2Typo; color: $purple;
             }
             span{
-                @include mainTxt; color: $gray05; font-weight: 400;
+                @include p1Typo; color: $gray05; font-weight: 400;
             }
         }
         .box-btn{
@@ -725,10 +725,10 @@
         display: inline-flex; flex-direction: column; align-items: center; padding: 0 26px; width: 256px;
         .step {
             display:inline-block;height:28px;padding:0 12px;border-radius:14px;background:$black; max-width: 70px;
-            @include normalTxt;color:$white;line-height:28px;
+            @include p2Typo;color:$white;line-height:28px;
         }
-        .tit {display:block;@include mainTxt;margin-top: 10px;}
-        .txt {display:block;margin-top:10px;@include smallDepthTxt;}
+        .tit {display:block;@include p1Typo;margin-top: 10px;}
+        .txt {display:block;margin-top:10px;@include small1Typo;}
         .icon-wrap{
             width: 80px; height: 80px; margin-top: 20px;
             img{width: 100%;}
@@ -743,10 +743,10 @@
     @include backgroundImg('../../assets/images/icon/ico-join-complete.svg', center top,120px 120px);
     .ico {
         &-title{
-            @include mainTxt; text-align: center;
+            @include p1Typo; text-align: center;
             & > span{@extend %fontInherit;}
         }
-        &-txt{@include defaultTxt;margin-top: 20px;text-align: center;}
+        &-txt{@include p2Typo;margin-top: 20px;text-align: center;}
     }
     .cardList-wrap{margin-top: 50px;}
     &.nodata{
@@ -786,15 +786,15 @@
     }
 }
 .bang-notice-bt{
-    margin-bottom: 10px; @include defaultTxt;
+    margin-bottom: 10px; @include p2Typo;
 }
 .info-case{
     padding: 40px; background-color: $bg;border-radius: 10px;
     strong{
-        display: block; @include normalTxt;
+        display: block; @include p2Typo;
     }
     p{
-        margin-top: 10px; @include defaultTxt;
+        margin-top: 10px; @include p2Typo;
         & + p{margin-top: 5px;}
     }
     .notification{
@@ -818,12 +818,12 @@
             border:1px solid $purple;
         }
         .title{
-            @include mainTxt;
+            @include p1Typo;
         }
         .pay-amount{
             padding-top: 0;
             .discount-pay{
-                @include subContsTitle; color:$purple;
+                @include h4Typo; color:$purple;
             }
         }
         .phone-type{
@@ -854,7 +854,7 @@
                     display: inline-block; height: 23px;
                 }
                 .title{
-                    @include mainTxt;margin-left: 0;
+                    @include p1Typo;margin-left: 0;
                 }
                 .chip-wrap{
                     display: inline-flex;margin: 0; flex-shrink: 0;
@@ -865,7 +865,7 @@
                 display: flex; justify-content: space-between; align-items: center; margin-top: 20px;
                 .feature-wrap{
                     span{
-                        display: block; @include defaultTxt;
+                        display: block; @include p2Typo;
                         & + span{margin-top: 10px;}
                         * {@extend %fontInherit;}
                     }
@@ -876,7 +876,7 @@
                         font-size: 14px; font-weight: 400; color: $black; letter-spacing: -0.28px;
                     }
                     .txt-vt{
-                        @include mainTxt;
+                        @include p1Typo;
                         * {@extend %fontInherit;}
                     }
                 }
@@ -912,6 +912,6 @@
 }
 // 로딩중 텍스트
 .loading-txt{
-    @include defaultTxt;
+    @include p2Typo;
     display: flex; justify-content: center; align-items: center; padding: 78px 40px;border:1px solid $gray02; border-radius:10px;width:100%;
 }

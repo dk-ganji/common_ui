@@ -4,7 +4,7 @@
 
 .accordian {
     & > .acc-trigger {
-        display:block;width:100%;position:relative;margin-bottom:20px; @include defaultTxt;
+        display:block;width:100%;position:relative;margin-bottom:20px; @include p2Typo;
         &:after {content: "";position:absolute;right:0;top:50%;width:13px;height:8px;background:url(../../assets/images/icon/ico-arrow-bottom.svg) no-repeat 0 0;background-size:100%;transform:translateY(-50%);}
         &.on{
             border-bottom:0;
@@ -23,17 +23,17 @@
 
 // 꼭 확인하세요!
 .notification-wrap {
-    h3, h4 {display:block;margin-bottom:10px;@include mainTxt;}
+    h3, h4 {display:block;margin-bottom:10px;@include p1Typo;}
     ul.notification{
         li{
             a{
-                @include defaultTxt; color: $deepblue; text-decoration: underline;
+                @include p2Typo; color: $deepblue; text-decoration: underline;
             }
             .box-btn{
                 .btn-text-right{
-                    @include normalTxt; text-decoration: none;
+                    @include p2Typo; text-decoration: none;
                     &-s{
-                        @include smallTxt; text-decoration: none;
+                        @include small1Typo; text-decoration: none;
                     }
                 }
             }

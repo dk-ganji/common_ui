@@ -2,7 +2,7 @@
 
 // extend
 %btn {
-    @include normalTxt; color: $white;width:260px; height: 58px; background:$purple; padding:20px 0; border-radius:7px; text-align: center;
+    @include p2Typo; color: $white;width:260px; height: 58px; background:$purple; padding:20px 0; border-radius:7px; text-align: center;
 }
 .btns{
     @extend %btn; display: inline-block; text-align: center;
@@ -16,7 +16,7 @@
         @extend %btn; /*max-width:140px;*/width:auto;min-width:140px; height:58px; padding:0 30px; display: flex; justify-content: center; align-items: center;
     }
     &.w-xs{
-        @include smallTxt; width:auto;min-width:84px; height:30px; padding:0 30px;line-height:30px;
+        @include small1Typo; width:auto;min-width:84px; height:30px; padding:0 30px;line-height:30px;
     }
     &.line{
         @extend %btn; background: $white; border:1px solid $gray02; color:$black; transition: border 0.3s;
@@ -53,16 +53,16 @@
 
 }
 .btn-dark-gray{
-    @include normalTxt; color: $white; height:58px; background:$gray05; border-radius:7px; min-width:120px;
+    @include p2Typo; color: $white; height:58px; background:$gray05; border-radius:7px; min-width:120px;
     &:disabled{
         background-color:$gray02;  cursor: default; color:#afafaf;
     }
 }
 .btn-underline{
-    @include defaultTxt; text-decoration: underline; display: block; margin:40px auto; text-align: center;
+    @include p2Typo; text-decoration: underline; display: block; margin:40px auto; text-align: center;
 }
 .btn-text{
-    @include normalTxt;
+    @include p2Typo;
     &-right{
         @extend .btn-text; padding-right:25px;
         @include backgroundImg('../../assets/images/icon/ico-arrow-right.svg', right,20px 20px); display: inline-block;
@@ -72,7 +72,7 @@
         }
     }
     &-right-s{
-        @extend .btn-text; padding-right:22px;@include smallTxt;
+        @extend .btn-text; padding-right:22px;@include small1Typo;
         @include backgroundImg('../../assets/images/icon/ico-arrow-right.svg', right,15px 15px); display: inline-block;
     }
     &-plus{
@@ -97,14 +97,14 @@
         @extend .btn-text;
         justify-content: space-between; align-items:center;display: flex; padding:16px 20px;border:1px solid $gray02; border-radius:7px;
         .text {
-            @include smallTxt;
-            .num {width:20px;height:20px;margin-left:20px;border-radius:50%;background:$purple;@include smallDepthTxt2; color:$white;font-size:14px;line-height:20px; display: inline-block; text-align: center;}
+            @include small1Typo;
+            .num {width:20px;height:20px;margin-left:20px;border-radius:50%;background:$purple;@include small1Typo; color:$white;font-size:14px;line-height:20px; display: inline-block; text-align: center;}
         }
     }
     &-line.btn-check{
         padding: 13px 20px; border:1px solid $gray02; border-radius: 7px;
         label{
-            @include normalTxt;
+            @include p2Typo;
              .txt-vt {margin-right:5px;display:inline-block;}
         }
     }
@@ -117,7 +117,7 @@
         a{
             display: flex; justify-content: space-between; align-items: center; width: 100%; padding:30px; border-radius: 10px; border:1px solid $gray02; gap:20px;
             .downLoad-tit{
-                width:calc(100% - 28px); @include normalTxt;
+                width:calc(100% - 28px); @include p2Typo;
             }
         }
     }
@@ -129,7 +129,7 @@
         a{
             display: flex; justify-content: space-between; align-items: center; width: 100%; padding:20px; border-radius: 10px; border:1px solid $gray02; gap:20px; background-color: $white;
             .link-tit{
-                width:calc(100% - 28px); @include normalTxt;
+                width:calc(100% - 28px); @include p2Typo;
             }
         }
     }
@@ -165,7 +165,7 @@
 // 날짜 버튼
 .month-box {
     display: flex; justify-content: space-between; align-items: center; border:1px solid $gray02; border-radius: 7px;padding:15px;
-    strong {@include normalTxt;}
+    strong {@include p2Typo;}
     .btn-month {
         width:20px !important;height:20px !important;
         &.ico-arrow-left{
@@ -184,7 +184,7 @@
     position:relative;
     .mark {
         position:absolute;left:50%;top:-20px;z-index:1;padding:5px 12px;background:#eb068b;transform:translateX(-50%);border-radius: 5px; min-width: 155px;text-align: center;
-        @include smallDepthTxt; color: $white;
+        @include small1Typo; color: $white;
         &::before {content:'';display:block;position:absolute;left:50%;bottom:-5px;width:10px;height:10px;background:#eb068b;transform:rotate(45deg); z-index: -1;}
     }
 }
@@ -208,10 +208,10 @@
         }
     }
     .count-num{
-        @include normalTxt; text-align: center;
+        @include p2Typo; text-align: center;
     }
     .total-count{
-        @include mainTxt;
+        @include p1Typo;
         & > span{@extend %fontInherit;}
     }
 }
