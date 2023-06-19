@@ -5,12 +5,14 @@
 	font-weight: 300;
 	font-display: block;
 	src: local('NotoSansKR Regular'), url('../../assets/fonts/NotoSansKR-Regular.woff2') format('woff2');
+	font-style: normal;
 }
 @font-face {
 	font-family: 'NotoSans';
 	font-weight: 500;
 	font-display: block;
 	src: local('NotoSansKR Medium'), url('../../assets/fonts/NotoSansKR-Medium.woff2') format('woff2');
+	font-style: normal;
 }
 
 @font-face {
@@ -18,11 +20,13 @@
 	font-weight: 700;
 	font-display: block;
 	src: local('NotoSansKR Bold'), url('../../assets/fonts/NotoSansKR-Bold.woff2') format('woff2');
+	font-style: normal;
 }
 
 @font-face {
-	font-family: 'SegoeUI';
-	font-weight: 700;
+	font-family: 'NotoSans';
 	font-display: block;
-	src: local('Segoe UI'), url('../../assets/fonts/SegoeUI.woff2') format('woff2');
+	src: url('../../assets/fonts/SegoeUI.woff2') format('woff2');
+	font-style: normal;
+	unicode-range: U+0030-0039;
 }
