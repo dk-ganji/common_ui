@@ -8,7 +8,7 @@
 .purple {background-color: $purple;}
 .lightpurple {background-color: $lightpurple;}
 .pinkpurple {background-color: $pinkpurple;}
-.lightgray {background-color: $gray06;}
+.lightgray {background-color: $gray60;}
 .pink {background-color: $pink;}
 .deeppink {background-color: $deeppink;}
 .lightorange {background-color: $lightorange;}
@@ -27,7 +27,7 @@
 .silver {background-color: $silver;}
 .gold {background-color: $gold;}
 .jade {background-color: $jade;}
-.gray {background-color: $gray05;}
+.gray {background-color: $gray50;}
 
 .txt-rd {
     color: $red !important;font-size:inherit;font-weight:inherit;line-height:inherit;
@@ -42,6 +42,6 @@
     &-b {color: $black !important;font-size:inherit;font-weight:600 !important;line-height:inherit;}
 }
 .txt-gy {
-    color: $gray05 !important;font-size:inherit;font-weight:inherit;line-height:inherit;
-    &-b {color: $gray05 !important;font-size:inherit;font-weight:600 !important;line-height:inherit;}
+    color: $gray50 !important;font-size:inherit;font-weight:inherit;line-height:inherit;
+    &-b {color: $gray50 !important;font-size:inherit;font-weight:600 !important;line-height:inherit;}
 }

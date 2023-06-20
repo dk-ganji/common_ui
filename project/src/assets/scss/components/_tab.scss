@@ -11,8 +11,8 @@
         li{
             flex-shrink: 0; width: auto;
             a{
-                display: block; height: 60px; padding: 18px 40px; border-radius: 36px; background-color: $gray01; text-align: center; overflow: hidden;
-                @include p1Typo; color: $gray05;
+                display: block; height: 60px; padding: 18px 40px; border-radius: 36px; background-color: $gray10; text-align: center; overflow: hidden;
+                @include p1Typo; color: $gray50;
                 &.on{
                     background-color: $purple; color: $white;
                 }
@@ -32,7 +32,7 @@
             li{
                 flex: 1;
                 a {
-                    @include p1Typo; color: $gray05;background: none; border-bottom: 2px solid $gray02; border-radius: 0;
+                    @include p1Typo; color: $gray50;background: none; border-bottom: 2px solid $gray20; border-radius: 0;
                     span{@extend %fontInherit;}
                     &.on{
                         background: none; color: $purple; border-color: $purple;
@@ -59,8 +59,8 @@
         li{
             flex-shrink: 0; width: auto;
             a{
-                display: block; padding: 18px 40px; border-radius: 36px; background-color: $gray01; text-align: center;
-                @include p1Typo; color: $gray05;
+                display: block; padding: 18px 40px; border-radius: 36px; background-color: $gray10; text-align: center;
+                @include p1Typo; color: $gray50;
                 &.on{
                     background-color: $purple; color: $white;
                 }

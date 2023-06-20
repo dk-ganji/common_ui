@@ -295,12 +295,12 @@
 
 }
 .progress-state { 
-    margin-top: 30px;
-    > p{
-        font-size: 16px; font-weight: bold;
-    }
+margin-top: 30px;
+> p{
+    font-size: 16px; font-weight: bold;
+}
 
- }
+}
 .statebox { 
     display: inline-flex; flex-wrap: wrap; align-items: center; justify-content: space-around; gap: 40px; border: 1px dashed #ddd; padding: 20px; margin-top: 10px; 
     li{
@@ -407,18 +407,22 @@
     }
     h3{
         strong{
-            font-size:16px; margin-bottom:15px; display: inline-block;
+            margin-bottom:15px; display: inline-block; @include h3Typo;
+        }
+    }
+    h4{
+        strong{
+            @include h4Typo
         }
     }
 }
 .wsg {
-    .color-guide{
-        padding: 5px 20px;
+    .colorGuide{
+        display: flex; justify-content: space-between; align-items: center; min-height: 45px;  padding: 5px 20px; font-size: 14px; font-weight: 700;
         strong{
-            opacity: 0.5;
+            font-size: 14px; font-weight: 700; opacity: 0.7;
         }
-    }
-    
+    }    
 }
 .script-guide{
     padding-top: 100px;
@@ -454,5 +458,108 @@
 .nice-select{
     &+.selected{
         display: none;
+    }
+}
+.flexColumn{
+    display: flex; gap: 30px;
+    > div{
+        flex: 1; 
+    }
+}
+.colorSystem{
+    .colorItem{
+        margin-top: 10px;
+        &:first-of-type{
+            margin-top: 0;
+        }
+        .colorGuide{
+            display: flex; justify-content: space-between; align-items: center; min-height: 45px;  color: $white; font-size: 14px; font-weight: 700;
+            strong{
+                font-size: 14px; font-weight: 700;
+            }
+        }
+        .primary{
+            background-color: $primary;
+            &100{
+                background-color: $primary100;
+            }
+            &60{
+                background-color: $primary60;
+            }
+            &40{
+                background-color: $primary40;
+            }
+            &20{
+                background-color: $primary20;
+            }
+        }
+        .secondary{
+            background-color: $secondary;
+            &100{
+                background-color: $secondary100;
+            }
+            &60{
+                background-color: $secondary60;
+            }
+            &40{
+                background-color: $secondary40;
+            }
+            &20{
+                background-color: $secondary20;
+            }            
+        }
+        .accent{
+            background-color: $accent;
+            &100{
+                background-color: $accent100;
+            }
+            &60{
+                background-color: $accent60;
+            }
+            &40{
+                background-color: $accent40;
+            }
+            &20{
+                background-color: $accent20;
+            }                
+        }
+        .successLight{
+            background-color: $successLight;
+        }
+        .success{
+            background-color: $success;
+        }
+        .warningLight{
+            background-color: $warningLight;
+        }        
+        .warning{
+            background-color: $warning;
+        }
+        .errorLight{
+            background-color: $errorLight;
+        }
+        .error{
+            background-color: $error;
+        }
+        .blue10{
+            background-color: $blue10;
+        }
+        .red10{
+            background-color: $red10;
+        }
+        .colorList{
+            display: flex; gap: 5px; padding-top: 5px;
+            > li{
+                display: flex; flex: 1; height: 90px; font-size: 12px; color: $white; align-items: center; justify-content: center;
+                &:nth-child(n+4){
+                    color: $black;
+                }
+            }
+        }
+    }
+}
+.grayScale{
+    .colorGuide{
+        height: 49px;
     }
 }

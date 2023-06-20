@@ -157,11 +157,11 @@ section .preview { color: #666666; }
 .sampleContent h3 strong{font-size:16px; margin-bottom:15px; display: inline-block;}
 
 
-.wsg .color-guide {
+.wsg .colorGuide {
     padding: 5px 20px;
 }
 
-.wsg .color-guide strong {
+.wsg .colorGuide strong {
     opacity: 0.5;
 }
 .script-guide{padding-top: 100px;}

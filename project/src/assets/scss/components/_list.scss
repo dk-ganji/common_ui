@@ -2,8 +2,8 @@
 
 .list {
     li {
-        &.notice {background:$gray01;}
-        a {display:block;width:100%;padding:24px;border-bottom:1px solid $gray03;
+        &.notice {background:$gray10;}
+        a {display:block;width:100%;padding:24px;border-bottom:1px solid $gray30;
             strong {@include p2Typo;}
             .date {
                 display:flex;justify-content:space-between;align-items:center;margin-top:16px;
@@ -74,7 +74,7 @@
         span {display:block;@include p2Typo;}
     }
     .cardList {
-        width:100%;padding:40px;border:1px solid $gray02;border-radius:10px;background:$white;
+        width:100%;padding:40px;border:1px solid $gray20;border-radius:10px;background:$white;
         .product-name{
             h3{
                 @include p2Typo;
@@ -99,7 +99,7 @@
                 @include p2Typo;
                 &:last-of-type{padding-bottom: 0;}
             }
-            &+.info {margin:40px 0 20px;padding-top:40px;border-top:1px solid $gray02;@include p2Typo;}
+            &+.info {margin:40px 0 20px;padding-top:40px;border-top:1px solid $gray20;@include p2Typo;}
         }
         &.no-list {
             padding:78px 40px;
@@ -112,7 +112,7 @@
         }
         &.cancel {
             .list-header {
-                span {color: $gray05;}
+                span {color: $gray50;}
             }
         }
         &.first-full{
@@ -204,13 +204,13 @@
         padding:32px 40px;
         dl {
             dt {
-                width:210px;padding:24px 0;border-bottom:1px solid $gray03;font-weight:400;
+                width:210px;padding:24px 0;border-bottom:1px solid $gray30;font-weight:400;
                 &:first-of-type{padding-top:0;}
                 &:last-of-type{border-bottom:0;}
 
             }
             dd {
-                width:calc(100% - 210px);padding:24px 0;border-bottom:1px solid $gray03;text-align:left;
+                width:calc(100% - 210px);padding:24px 0;border-bottom:1px solid $gray30;text-align:left;
                 @include p2Typo;
                 &:first-of-type{padding-top:0;}
                 &:last-of-type{border-bottom:0;}
@@ -221,7 +221,7 @@
     &+.cardList-wrap {margin-top:50px;}
     .cardList-img{
         width:100%; min-height:400px;
-        background: $gray01;
+        background: $gray10;
         border-radius:7px;
         position: relative;
         .date{
@@ -251,7 +251,7 @@
 
 }
 .card-check {
-    margin-bottom:30px;padding-bottom:30px;border-bottom:1px solid $gray02;
+    margin-bottom:30px;padding-bottom:30px;border-bottom:1px solid $gray20;
     label {
         span {font-size:28px;}
     }
@@ -281,7 +281,7 @@
             }
         }
         dl{
-            background:$gray01; padding:40px;
+            background:$gray10; padding:40px;
             dt{
                 width:302px;
             }
@@ -400,7 +400,7 @@
                             .acc-conts {
                                 padding-top:20px;
                                 .cardList {
-                                    border:none;border-top:1px solid $gray02;padding:20px 0 0 0;border-radius:0;background:none;
+                                    border:none;border-top:1px solid $gray20;padding:20px 0 0 0;border-radius:0;background:none;
                                     dl {
                                         margin-bottom:-10px;
                                         dt {width:60%;padding-bottom:10px;@include p2Typo; }
@@ -435,7 +435,7 @@
                 }
             }
             .notification {margin-top:30px;;}
-            .box-item {margin-top:40px;padding-top:20px;border-top:1px solid $gray02;}
+            .box-item {margin-top:40px;padding-top:20px;border-top:1px solid $gray20;}
             .box-btn {margin-top:30px;}
         }
     }
@@ -466,7 +466,7 @@
             }
         }
          .item-bottom{
-            margin-top:40px;padding-top:20px;border-top:1px solid $gray02;
+            margin-top:40px;padding-top:20px;border-top:1px solid $gray20;
             .btn-text-right,
             .txt {
                 @include p2Typo;
@@ -479,7 +479,7 @@
             & + .cardList{margin-top: 30px;}
             position: relative; border: none;
             label {
-                display:block;position:absolute;left:0;top:0;width:100%;height:100%;overflow:hidden;border:1px solid $gray02; border-radius:10px;text-indent:-999em;transition:0.3s; cursor:pointer;
+                display:block;position:absolute;left:0;top:0;width:100%;height:100%;overflow:hidden;border:1px solid $gray20; border-radius:10px;text-indent:-999em;transition:0.3s; cursor:pointer;
                 &:hover{
                     border-color:$purple;
                 }
@@ -497,10 +497,10 @@
         position:relative;padding-left:10px;
         @include p2Typo; line-height: 1.5;
         & + li{margin-top: 5px;}
-        &::before {content:'';width:3px;height:3px;background: $gray05;border-radius: 50%;position: absolute;top:9px;left:0;}
+        &::before {content:'';width:3px;height:3px;background: $gray50;border-radius: 50%;position: absolute;top:9px;left:0;}
         &:last-child {margin-bottom:0;}
         .list-hyphen {
-            &>li {margin-bottom:0;color:$gray05;}
+            &>li {margin-bottom:0;color:$gray50;}
         }
     }
     &.txt-rd{
@@ -547,7 +547,7 @@
 .list-hyphen {
     &>li {
         position:relative;margin-bottom:10px;padding-left:10px;
-        @include p2Typo;color:$gray04;line-height:1.5; /* 예외케이스로 line-height 지정*/
+        @include p2Typo;color:$gray40;line-height:1.5; /* 예외케이스로 line-height 지정*/
         &::before {content:'-';width:3px;height:3px;position:absolute;top:-1px;left:0;}
         &:last-child{margin-bottom:0;}
     }
@@ -556,7 +556,7 @@
 .other-list{
     width:100%;
     li{
-        border-bottom:1px solid $gray03;
+        border-bottom:1px solid $gray30;
         padding:30px 0; display: flex; justify-content: space-between; align-items: center; gap:30px;
         &:last-child{
             border-bottom:0;
@@ -583,7 +583,7 @@
     margin-top: 20px;
     .accordian {
         &>.acc-trigger {
-            display:block; width:100%; position:relative;margin-bottom:40px;padding-bottom:10px;border-bottom:1px solid $gray02;
+            display:block; width:100%; position:relative;margin-bottom:40px;padding-bottom:10px;border-bottom:1px solid $gray20;
             @include p1Typo; text-align:left;font-weight:600;
             .title {@include h3Typo;}
             &:after {
@@ -600,7 +600,7 @@
         padding:0;border-radius:0;background:none;
         .acc-conts-wrap {
             &>a {
-                border:1px solid $gray02;border-radius:7px;box-sizing:border-box;background:$white;transition:0.3s; display:block;position:relative;padding:40px;
+                border:1px solid $gray20;border-radius:7px;box-sizing:border-box;background:$white;transition:0.3s; display:block;position:relative;padding:40px;
                 .mark {position:absolute;left:-1px;top:-1px;}
                 &:hover {
                     border-color:$purple;
@@ -612,7 +612,7 @@
                 &:checked + label {border-color: $purple;}
             }
             &>label {
-                display:block;position:relative;padding:40px; cursor: pointer; border:1px solid $gray02;border-radius:7px;box-sizing:border-box;background:$white;transition:0.3s;
+                display:block;position:relative;padding:40px; cursor: pointer; border:1px solid $gray20;border-radius:7px;box-sizing:border-box;background:$white;transition:0.3s;
                 .mark {position:absolute;left:-1px;top:-1px;}
                 &:hover{
                     border-color:$purple;
@@ -702,11 +702,11 @@
 }
 // 요금제 디테일 카드
 .payment-detail-card-wrap{
-    padding: 40px;border: solid 1px $gray02; border-radius:7px;
+    padding: 40px;border: solid 1px $gray20; border-radius:7px;
     .txt-vt{@extend %fontInherit;}
     & > ul{
         & > li:not(:first-of-type){
-            border-top: solid 1px $gray02; padding-top: 40px;margin-top: 40px;
+            border-top: solid 1px $gray20; padding-top: 40px;margin-top: 40px;
         }
     }
     .detail-title{
@@ -729,7 +729,7 @@
 // 아이콘과 텍스트있는 카드
 .icon-txt-card{
     img{width: 120px;}
-    display: flex; gap: 30px; align-items: center; border: solid 1px $gray02;border-radius:10px; padding: 20px !important; @include small1Typo;
+    display: flex; gap: 30px; align-items: center; border: solid 1px $gray20;border-radius:10px; padding: 20px !important; @include small1Typo;
     &.cardList{
         .card-img{
             width: 60px; height: 60px;
@@ -775,7 +775,7 @@
             }
         }
         &-bottom {
-            display: flex; justify-content: space-between; border-top: 1px solid $gray02; padding-top: 40px;
+            display: flex; justify-content: space-between; border-top: 1px solid $gray20; padding-top: 40px;
             .category-tit{
                 @include small1Typo; font-weight: 600;
             }
@@ -823,7 +823,7 @@
         }
     }
     .result-list {
-        border-top:1px solid $gray02;
+        border-top:1px solid $gray20;
     }
     .result-more {padding:40px 0;text-align:center;}
 }
@@ -853,7 +853,7 @@
 
 //원형숫자 step
 .num-process-wrap{
-    display:flex;justify-content:flex-start;border:1px solid $gray02;border-radius:7px;padding:40px;
+    display:flex;justify-content:flex-start;border:1px solid $gray20;border-radius:7px;padding:40px;
     & > li {
         display:flex;flex:1;position:relative;padding:60px 20px 0;
         &::before {content:'';display:block;position:absolute;left:50%;top:15px;z-index:0;width:100%;height:1px;background:$purple;}
@@ -871,9 +871,9 @@
             }
         }
         &.disabled {
-            .number {background-color: $gray02;}
+            .number {background-color: $gray20;}
             .txt-wrap {
-                *{color: $gray04;}
+                *{color: $gray40;}
             }
         }
         .number {
@@ -889,7 +889,7 @@
     }
 }
 .num-process-typeU {
-    border:1px solid $gray02;border-radius:7px;padding:40px;
+    border:1px solid $gray20;border-radius:7px;padding:40px;
     .num-process-wrap {
         position:relative;border:none;border-right:1px solid $purple !important;border-radius:0;padding:0;
         &.row01 {
@@ -921,7 +921,7 @@
 //체크리스트
 .box-check-list{
     @include backgroundImg('../../assets/images/icon/bg-checklist.png',right bottom, 302px 198px);
-    display: flex; align-items: center; height: 200px; border: 1px solid $gray02; border-radius: 10px;
+    display: flex; align-items: center; height: 200px; border: 1px solid $gray20; border-radius: 10px;
     ul{
         display: flex; flex-wrap: wrap; max-width: 790px; margin-left: 40px;
         li{
@@ -939,10 +939,10 @@
 
 //회색상단 카드리스트
 .reward-card-wrap {
-    overflow:hidden;border:1px solid $gray02;border-radius:7px;
+    overflow:hidden;border:1px solid $gray20;border-radius:7px;
     dl {
         dt {
-            padding:30px 40px;background:$gray01;
+            padding:30px 40px;background:$gray10;
             strong {@include p2Typo;}
             .txt {margin-top:10px;@include small1Typo;line-height:1.33;}
         }
@@ -956,9 +956,9 @@
 
 .topGray-card-wrap {
     dl {
-        overflow:hidden;border:1px solid $gray02;border-radius:7px;
+        overflow:hidden;border:1px solid $gray20;border-radius:7px;
         dt {
-            padding:18px 30px;border-bottom:1px solid $gray02;background:$gray01;
+            padding:18px 30px;border-bottom:1px solid $gray20;background:$gray10;
             strong {@include p1Typo;}
             .txt {margin-top:10px;@include small1Typo;}
         }
@@ -1013,7 +1013,7 @@
 .img-txt-present {
     &>li {
         display:flex;justify-content:space-between;align-items:center;padding:50px 120px;
-        &+li {border-top:1px solid $gray02;}
+        &+li {border-top:1px solid $gray20;}
         .method {
             flex-grow:1; width:calc(100% - 470px);
             &>strong {@include h3Typo;}
@@ -1040,7 +1040,7 @@
                 dt {width:250px;@include p2Typo;text-align:left;}
                 dd {width:calc(100% - 250px);text-align:right;}
                 &+dl {
-                   align-items:center;padding:35px 40px;border-bottom:1px solid $gray02;background:$gray06;
+                   align-items:center;padding:35px 40px;border-bottom:1px solid $gray20;background:$gray60;
                    dt {
                        padding-bottom:0;@include p1Typo;
                        .add-txt {font-weight:normal;}
@@ -1170,12 +1170,12 @@
 
 // 할부 정보 리스트
 .month-plan-box{
-    display: flex; align-items: center; min-height: 150px; border: 1px solid $gray02; border-radius: 10px;
+    display: flex; align-items: center; min-height: 150px; border: 1px solid $gray20; border-radius: 10px;
     dl{
         position: relative; width: 50%; text-align: center;
         &:first-child{
             &:after{
-                content: ''; position: absolute; right: 0; top: 50%; transform: translateY(-50%); width: 1px; height: 70px; background: $gray02;
+                content: ''; position: absolute; right: 0; top: 50%; transform: translateY(-50%); width: 1px; height: 70px; background: $gray20;
             }
         }
         dt{

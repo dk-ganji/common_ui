@@ -50,7 +50,7 @@
                 @include p1Typo;
             }
             td {
-                padding: 30px 0; color: $gray05;
+                padding: 30px 0; color: $gray50;
             }
         }
         &.table-scroll {
@@ -86,7 +86,7 @@
                 position: relative; padding-right: 60px;
                 &:after {
                     content: '';
-                    position: absolute; top: 50%; right: 0;  display: block; width: 1px; height: 114px; background-color: $gray02; transform: translateY(-50%);
+                    position: absolute; top: 50%; right: 0;  display: block; width: 1px; height: 114px; background-color: $gray20; transform: translateY(-50%);
                 }
                 .box-btn{
                     a{display: block;}
@@ -124,7 +124,7 @@
     li{
         width: 24px;height: 24px; overflow: hidden;
         .number{
-            display: inline-block; width: 24px; height: 24px; border-radius: 50%; background-color: $gray02; color: $white; font-weight: 600; line-height: 24px; text-align: center;
+            display: inline-block; width: 24px; height: 24px; border-radius: 50%; background-color: $gray20; color: $white; font-weight: 600; line-height: 24px; text-align: center;
         }
         .page-txt{
             @include p2Typo; margin-left: 5px;
@@ -157,7 +157,7 @@
 
 // 요금 즉시 납부, 청구요금 조회, 사용요금
 .my-month {
-    position:relative;padding:40px;border:1px solid $gray02;border-radius: 10px;
+    position:relative;padding:40px;border:1px solid $gray20;border-radius: 10px;
     .detail {
         display:inline-flex;align-items:baseline;margin-right:70px;
         strong {
@@ -176,7 +176,7 @@
                 margin-bottom: 10px;
                 @include p1Typo;
             }
-            dd {@include p1Typo;color: $gray05;font-weight:400;}
+            dd {@include p1Typo;color: $gray50;font-weight:400;}
         }
         .how {
             display:inline-flex;margin-bottom:3px;
@@ -192,7 +192,7 @@
         button,.box-btn {position:absolute;right:40px;bottom:39px;padding:0 30px;width:auto;max-width:none;@include small1Typo;}
         &.type-02{
             .top{
-                display: flex; justify-content: space-between; align-items: flex-start; padding-bottom: 40px; border-bottom: 1px solid $gray02; margin-bottom: 20px;
+                display: flex; justify-content: space-between; align-items: flex-start; padding-bottom: 40px; border-bottom: 1px solid $gray20; margin-bottom: 20px;
                 .period{
                     margin: 0;
                     dd{@include p2Typo;}
@@ -250,12 +250,12 @@
         .period {
             margin-bottom:30px;
             dt {margin-bottom:10px;@include p2Typo;}
-            dd {color: $gray05;}
+            dd {color: $gray50;}
         }
     }
     &.type-total {
         .total{
-            display: flex; gap: 30px; padding-bottom: 40px; border-bottom: 1px solid $gray02; margin-bottom: 40px;
+            display: flex; gap: 30px; padding-bottom: 40px; border-bottom: 1px solid $gray20; margin-bottom: 40px;
             dl {
                 display: flex; gap: 20px; position: relative;
                 &.this-month{
@@ -294,7 +294,7 @@
         .period {
             display:flex;justify-content:center;flex-direction:column;
             dt {@include p1Typo;}
-            dd {margin-top:10px;@include p1Typo;color: $gray05;font-weight:400;}
+            dd {margin-top:10px;@include p1Typo;color: $gray50;font-weight:400;}
         }
         .detail {
             align-items:center;margin-right:0;
@@ -329,19 +329,19 @@
                 margin-bottom: 10px;
                 h1 {@include p1Typo;}
             }
-            dd {@include p1Typo;color:$gray05;font-weight:400;}
+            dd {@include p1Typo;color:$gray50;font-weight:400;}
         }
     }
     &>.list {
         overflow:hidden;position:relative;margin-bottom:40px;
         h2 {
-            position:absolute;left:0;bottom:0;display:flex;justify-content:space-between;align-items:center;width:100%;height:96px;padding:0 40px;border-bottom:2px solid $gray02;background:#eff1f5;
+            position:absolute;left:0;bottom:0;display:flex;justify-content:space-between;align-items:center;width:100%;height:96px;padding:0 40px;border-bottom:2px solid $gray20;background:#eff1f5;
             span {@include p1Typo;}
             strong {@include h3Typo;color:$purple;}
             &+dl {margin-bottom:96px;border-bottom:0;}
         }
         dl {
-           padding:20px 0;border-top:1px solid $gray02;border-bottom:1px solid $gray02;font-size:0;
+           padding:20px 0;border-top:1px solid $gray20;border-bottom:1px solid $gray20;font-size:0;
             dt {
                 display:inline-block;width:calc(100% - 180px);padding:10px 0 10px 30px;@include p2Typo;
                 &.depth::before {content:'-';display:inline-block;margin-right:5px;}
@@ -389,7 +389,7 @@
 }
 //안내메세지
 .box-icon-info{
-    position: relative; padding: 58px 40px;border-radius: 10px; border: 1px solid $gray02;
+    position: relative; padding: 58px 40px;border-radius: 10px; border: 1px solid $gray20;
     p{
         @include p2Typo; margin-top: 10px;
     }
@@ -538,7 +538,7 @@
     }
     .unit-box {
         &-img {
-            margin:10px 0;padding:50px;border:1px solid $gray02;border-radius:10px;
+            margin:10px 0;padding:50px;border:1px solid $gray20;border-radius:10px;
             .unit-box-tit {
                 margin-bottom:20px;
                 .box-tit {
@@ -548,7 +548,7 @@
             .unit-box-ct {padding-top:30px;}
         }
         &-txt {
-            margin:10px 0;padding:30px;border:1px solid $gray02;border-radius:10px;
+            margin:10px 0;padding:30px;border:1px solid $gray20;border-radius:10px;
             .unit-box-tit {
                 margin-bottom:20px;
                 .box-tit {
@@ -565,7 +565,7 @@
         margin:10px 0;
         img {vertical-align:top;}
     }
-    .unit-hr {display:block !important;height:1px;margin:50px 0;border:0;background:$gray02;}
+    .unit-hr {display:block !important;height:1px;margin:50px 0;border:0;background:$gray20;}
     .unit-link {display:block;margin:10px 0;}
 
     //페이지 하단 버튼
@@ -620,7 +620,7 @@
         }
         .ico-filter{
             position:absolute;right:0;top:0;width:116px;height:116px;flex-shrink:0;font-size:0;
-            @include backgroundImg('../../assets/images/icon/ico-filter.svg', center , 38px 35px); background-color: $gray01;
+            @include backgroundImg('../../assets/images/icon/ico-filter.svg', center , 38px 35px); background-color: $gray10;
         }
     }
 }
@@ -678,7 +678,7 @@
                 @include h2Typo; color: $purple;
             }
             span{
-                @include p1Typo; color: $gray05; font-weight: 400;
+                @include p1Typo; color: $gray50; font-weight: 400;
             }
         }
         .box-btn{
@@ -719,7 +719,7 @@
 
 // step list
 .step-list {
-    display: flex; justify-content: space-between;  border:1px solid $gray02;border-radius:10px; padding: 40px 0;
+    display: flex; justify-content: space-between;  border:1px solid $gray20;border-radius:10px; padding: 40px 0;
     * {text-align: center;}
     .step-box {
         display: inline-flex; flex-direction: column; align-items: center; padding: 0 26px; width: 256px;
@@ -809,7 +809,7 @@
     }
     .muti-check{
         label{
-            border:1px solid $gray02; padding:40px; border-radius: 10px; display: flex; align-items: center; width: 100%; justify-content: space-between;
+            border:1px solid $gray20; padding:40px; border-radius: 10px; display: flex; align-items: center; width: 100%; justify-content: space-between;
             .flex-box{
                 display: flex; gap:20px;
             }
@@ -913,5 +913,5 @@
 // 로딩중 텍스트
 .loading-txt{
     @include p2Typo;
-    display: flex; justify-content: center; align-items: center; padding: 78px 40px;border:1px solid $gray02; border-radius:10px;width:100%;
+    display: flex; justify-content: center; align-items: center; padding: 78px 40px;border:1px solid $gray20; border-radius:10px;width:100%;
 }

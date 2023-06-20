@@ -2,16 +2,51 @@
 
 // grayscale
 $white: #fff;
-$gray01: #f6f6f6;
-$gray02: #ddd;
-$gray03: #eee;
-$gray04: #959595;
-$gray05: #666;
-$gray06: #eff1f5;
-$black: #191919;
+$gray10: #F9F9F9;
+$gray20: #F1F1F1;
+$gray30: #E8E8E8;
+$gray40: #D2D2D2;
+$gray50: #bbb;
+$gray60: #999;
+$gray70: #666;
+$gray80: #333;
+$black: #333;
 $bg: #fafafa;
 
 // color
+$primary100: rgba(var(--color-primary), 1);
+$primary: rgba(var(--color-primary), 0.8);
+$primary60: rgba(var(--color-primary), 0.6);
+$primary40: rgba(var(--color-primary), 0.4);
+$primary20: rgba(var(--color-primary), 0.2);
+
+$secondary100: rgba(var(--color-secondary), 1);
+$secondary: rgba(var(--color-secondary), 0.8);
+$secondary60: rgba(var(--color-secondary), 0.6);
+$secondary40: rgba(var(--color-secondary), 0.4);
+$secondary20: rgba(var(--color-secondary), 0.2);
+
+$accent100: rgba(var(--color-accent), 1);
+$accent: rgba(var(--color-accent), 0.8);
+$accent60: rgba(var(--color-accent), 0.6);
+$accent40: rgba(var(--color-accent), 0.4);
+$accent20: rgba(var(--color-accent), 0.2);
+
+$successLight : #F0FFF3;
+$success : #5FD473;
+
+$warningLight : #FFFBE7;
+$warning : #F2D540;
+
+$errorLight : #FFF8F8;
+$error : #E75050;
+
+$blue10 : #406EFF;
+$red10 : #E75050;
+
+
+
+
 $hotpink: #F03B79;
 $red: #e34140;
 $lightbrick: #bb4b4b;

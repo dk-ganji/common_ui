@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html lang="ko">
     @@include('../src/pages/includes/guide/head.html', {title: 'WSG - DK BMC'})
-
+    <!-- <style>
+        :root{
+            --color-primary: 44,72,213;
+        }
+    </style> -->
 <body>
     <div id="wsg-wrap" class="wsg">
 
@@ -30,142 +34,250 @@
                 <h2 class="sampleTitle">Typography</h2>
                 <div class="sampleContent">
                     <p class="h1Typo">
-                        디케이비엠시 - H1<br>
-                        0123456789
+                        h1 글자는 줄간격 이렇게 보여집니다.<br>
+                        h1 글자는 줄간격 이렇게 보여집니다.
                     </p>
                     <p class="h2Typo">
-                        디케이비엠시 - H2
+                        h2 글자는 줄간격 이렇게 보여집니다.<br>
+                        h2 글자는 줄간격 이렇게 보여집니다.
                     </p>
                     <p class="h3Typo">
-                        디케이비엠시 - H3
+                        h3 글자는 줄간격 이렇게 보여집니다.<br>
+                        h3 글자는 줄간격 이렇게 보여집니다.
                     </p>
                     <p class="h4Typo">
-                        디케이비엠시 - H4
+                        h4 글자는 줄간격 이렇게 보여집니다.<br>
+                        h4 글자는 줄간격 이렇게 보여집니다.
                     </p>
                     <p class="h5Typo">
-                        디케이비엠시 - H5
+                        h5 글자는 줄간격 이렇게 보여집니다.<br>
+                        h5 글자는 줄간격 이렇게 보여집니다.
                     </p>
                     <p class="p1Typo">
-                        디케이비엠시 - Paragraph1
+                        Paragraph1 글자는 줄간격 이렇게 보여집니다.<br>
+                        Paragraph1 글자는 줄간격 이렇게 보여집니다.
                     </p>
                     <p class="p2Typo">
-                        디케이비엠시 - Paragraph2
+                        Paragraph2 글자는 줄간격 이렇게 보여집니다.<br>
+                        Paragraph2 글자는 줄간격 이렇게 보여집니다.
                     </p>
                     <p class="small1Typo">
-                        디케이비엠시 - Small Text1
+                        Small Text1 글자는 줄간격 이렇게 보여집니다.<br>
+                        Small Text1 글자는 줄간격 이렇게 보여집니다.
                     </p>
                     <p class="small2Typo">
-                        디케이비엠시 - Small Text2
+                        Small Text2 글자는 줄간격 이렇게 보여집니다.<br>
+                        Small Text2 글자는 줄간격 이렇게 보여집니다.
+                    </p>
+                    <p class="small3Typo">
+                        Small Text3 글자는 줄간격 이렇게 보여집니다.<br>
+                        Small Text3 글자는 줄간격 이렇게 보여집니다.
                     </p>
 
 
                     <br><br>
                 </div>
                 <div class="description">
-                    <h3>GUIDE</h3>
+                    <h3>SCSS GUIDE</h3>
                     <p>
                         @include h1Typo; 로 사용
                     </p>
                 </div>
             </section>
 
-            <!-- <section class="sample">
-                <h2 class="sampleTitle">20px 타이틀 종류</h2>
-                <div class="sampleContent">
-                    <div class="page-desc">
-                        <h2>일반 타이틀</h2>
-                    </div>
-
-                    <div class="rq-form">
-                        <h2 class="p1Typo">rq-form용 타이틀</h2>
-
-                        <br>
-
-                        <div class="p1Typo-group">
-                            <h2 class="p1Typo">How We Create Value?</h2>
-                            <p class="txt">고객 가치(Customer Value)를 만들고 고객 성공(Customer Success)를 이어가는 것,<br>이것이 DK BMC의 차별화된 경쟁력입니다.</p>
-                        </div>
-                    </div>
-
-                    <div class="fix-unit-group">
-                        <h2 class="unit-tit-m">fix-unit-group용 중간타이틀</h2>
-                    </div>
-
-                    <div class="description">
-                        <h3>GUIDE</h3>
-                        <p>
-                            각 타이틀의 여백(margin값)은 다를 수 있음<br>
-                            * .page-desc는 일반적인 타이틀<br>
-                            * .p1Typo 타이틀은 .rq-form내서만 쓰는 타이틀<br>
-                            &nbsp;&nbsp;(.p1Typo-group은 .rq-form내 .p1Typo타이틀 + 텍스트일때 사용)<br>
-                            * .unit-tit-m 타이틀은 .fix-unit-group(텍스트컨텐츠 비중이 많은 컨텐츠)내에서만 쓰는 타이틀<br>
-                        </p>
-                    </div>
-                </div>
-            </section> -->
-
-            <!-- <section class="sample">
-                <h2 class="sampleTitle">아이콘 타이틀</h2>
-                <div class="sampleContent">
-
-                    <h3><strong>fix-unit-group용</strong></h3>
-                    <div class="fix-unit-group">
-                        <div class="tit-ico-wrap">
-                            <img src="../../assets/images/icon/ico-roll-paper-red.png" alt="">
-                            <div class="tit-wrap">
-                                <h2 class="unit-tit-b">How We Create Value?</h2>
-                                <p class="unit-txt">
-                                    고객 가치(Customer Value)를 만들고 고객 성공(Customer Success)를 이어가는 것,<br>이것이 DK BMC의 차별화된 경쟁력입니다.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-            </section> -->
-
+            <!-- Color System  -->
             <section class="sample">
                 <h2 class="sampleTitle">Color System</h2>
                 <div class="sampleContent">
-                    <h3><strong>Grey Scale</strong></h3>
+                    <div class="flexColumn">
+                        <!-- color scale -->
+                        <div class="colorSystem">
+                            <h3><strong>Color Scale</strong></h3>
+                            <div class="colorItem" style="margin-top: 1px;">
+                                <div class="colorGuide primary">
+                                    $primary;<br>
+                                    <strong style="color: #fff;">rgba(44,143,155,0.8)</strong>
+                                </div>
+                                <ul class="colorList">
+                                    <li class="primary100">$primary100</li>
+                                    <li class="primary">$primary</li>
+                                    <li class="primary60">$primary60</li>
+                                    <li class="primary40">$primary40</li>
+                                    <li class="primary20">$primary20</li>
+                                </ul>
+                            </div>
+                            <div class="colorItem">
+                                <div class="colorGuide secondary">
+                                    $secondary;<br>
+                                    <strong style="color: #fff;">rgba(35,58,171,0.8)</strong>
+                                </div>
+                                <ul class="colorList">
+                                    <li class="secondary100">$secondary100</li>
+                                    <li class="secondary">$secondary</li>
+                                    <li class="secondary60">$secondary60</li>
+                                    <li class="secondary40">$secondary40</li>
+                                    <li class="secondary20">$secondary20</li>
+                                </ul>                                
+                            </div>
+                            <div class="colorItem">
+                                <div class="colorGuide accent">
+                                    $accent;<br>
+                                    <strong style="color: #fff;">rgba(185,58,138,0.8)</strong>
+                                </div>
+                                <ul class="colorList">
+                                    <li class="accent100">$accent100</li>
+                                    <li class="accent">$accent</li>
+                                    <li class="accent60">$accent60</li>
+                                    <li class="accent40">$accent40</li>
+                                    <li class="accent20">$accent20</li>
+                                </ul>
+                            </div>
+        
+                            <div class="description">
+                                <h3>SCSS GUIDE</h3>
+        
+                                <p>
+                                    _variables.scss에 미리 정의해 둠. <br>
+                                </p>
+                                <h3>Example</h3>
+                                <pre>
+p {
+    background-color: $primary;
+}
+                                </pre>
+                            </div>                            
+                        </div>
+                        <!--// color scale -->
+                        <!-- gray scale -->
+                        <div class="grayScale">
+                            <h3><strong>Gray Scale</strong></h3>
+                            <div class="colorGuide" style="background-color:#FFFFFF;">
+                                $white;<br>
+                                <strong style="color: #333;">#FFFFFF</strong>
+                            </div>
+                            <div class="colorGuide" style="background-color:#F9F9F9;">
+                                $gray10;<br>
+                                <strong style="color: #333;">#F9F9F9</strong>
+                            </div>
+                            <div class="colorGuide" style="background-color:#F1F1F1;">
+                                $gray20;<br>
+                                <strong style="color: #333;">#F1F1F1</strong>
+                            </div>
+                            <div class="colorGuide" style="background-color:#E8E8E8;">
+                                $gray30;<br>
+                                <strong style="color: #333;">#E8E8E8</strong>
+                            </div>
+                            <div class="colorGuide" style="background-color:#D2D2D2;">
+                                $gray40;<br>
+                                <strong style="color: #333;">#D2D2D2</strong>
+                            </div>
+                            <div class="colorGuide" style="background-color:#BBBBBB;">
+                                $gray50;<br>
+                                <strong style="color: #333;">#BBBBBB</strong>
+                            </div>
+                            <div class="colorGuide" style="background-color:#999999; color:#fff;">
+                                $gray60;<br>
+                                <strong style="color: #fff;">#999999</strong>
+                            </div>
+                            <div class="colorGuide" style="background-color:#666666; color:#fff;">
+                                $gray70;<br>
+                                <strong style="color: #fff;">#666666</strong>
+                            </div>
+                            <div class="colorGuide" style="background-color:#333333; color:#fff;">
+                                $black;($gray80)<br>
+                                <strong style="color: #fff;">#333333</strong>
+                            </div>
 
-                    <h3><strong>Grey Scale</strong></h3>
-                    <div class="color-guide" style="background-color:#191919; color:#fff;">
-                        $black;<br>
-                        <strong style="color: #fff;">#191919;</strong>
+        
+        
+                            <div class="description">
+                                <h3>SCSS GUIDE</h3>
+        
+                                <p>
+                                    _variables.scss에 미리 정의해 둠. <br>
+                                </p>
+                                <h3>Example</h3>
+                                <pre>
+p {
+    color: $gray60;
+}
+                                </pre>
+                            </div>                            
+                        </div>
+                        <!--// gray scale -->
                     </div>
-                    <div class="color-guide" style="background-color:#f6f6f6; color:#191919;">
-                        $gray01;<br>
-                        <strong style="color: #fff;">#191919;</strong>
-                    </div>
-                    <div class="color-guide" style="background-color:#ddd; color:#191919;">
-                        $gray02;<br>
-                        <strong style="color: #fff;">#191919;</strong>
-                    </div>
-                    <div class="color-guide" style="background-color:#eee; color:#191919;">
-                        $gray03;<br>
-                        <strong style="color: #fff;">#191919;</strong>
-                    </div>
-                    <div class="color-guide" style="background-color:#959595; color:#191919;">
-                        $gray04;<br>
-                        <strong style="color: #fff;">#191919;</strong>
-                    </div>
-                    <div class="color-guide" style="background-color:#666; color:#fff;">
-                        $gray05;<br>
-                        <strong style="color: #fff;">#666666;</strong>
-                    </div>
-                    <div class="color-guide" style="background-color:#e34140; color:#fff;">
-                        $red;<br>
-                        <strong style="color: #fff;">#e34140;</strong>
-                    </div>
-                    <div class="color-guide" style="background-color:#7c40ce; color:#fff;">
-                        $purple;<br>
-                        <strong style="color: #fff;">#7c40ce;</strong>
-                    </div>
+                </div>
+            </section>            
+            <!--// Color System  -->
 
+            <section class="sample">
+                <h2 class="sampleTitle">Functional, Primary Text, Functional Text</h2>
+                <div class="sampleContent">
+                    <h3><strong>Functional Color</strong></h3>
+                    <div class="flexColumn colorSystem">
+                        <div class="colorItem">
+                            <h4><strong>Success</strong></h4>
+                            <div class="colorGuide successLight" style="color: #333;">
+                                $successLight
+                                <strong style="color: #333;">#F0FFF3</strong>
+                            </div>
+                            <div class="colorGuide success" style="color: #333;">
+                                $success
+                                <strong style="color: #333;">#5FD473</strong>
+                            </div>
+                        </div>
+                        <div class="colorItem" style="margin-top: 0;">
+                            <h4><strong>Warning</strong></h4>
+                            <div class="colorGuide warningLight" style="color: #333;">
+                                $warningLight
+                                <strong style="color: #333;">#F0FFF3</strong>
+                            </div>
+                            <div class="colorGuide warning" style="color: #333;">
+                                $warning
+                                <strong style="color: #333;">#5FD473</strong>
+                            </div>
+                        </div>
+                        <div class="colorItem" style="margin-top: 0;">
+                            <h4><strong>Error</strong></h4>
+                            <div class="colorGuide errorLight" style="color: #333;">
+                                $errorLight
+                                <strong style="color: #333;">#F0FFF3</strong>
+                            </div>
+                            <div class="colorGuide error" style="color: #fff;">
+                                $error
+                                <strong style="color: #fff;">#5FD473</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 style="margin-top: 30px;"><strong>Primary Text Colors</strong></h3>
+                    <div class="flexColumn colorSystem">
+                        <div class="colorItem">
+                            <div class="colorGuide primary" style="color: #fff; width: calc(34% - 30px);">
+                                $primary
+                                <strong style="color: #fff;">rgba(44,143,155,0.8)</strong>
+                            </div>
+                            <div class="colorGuide primary100" style="color: #fff; width: calc(34% - 30px);">
+                                $primary100
+                                <strong style="color: #fff;">rgba(44,143,155,1)</strong>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 style="margin-top: 30px;"><strong>Functional Text Colors</strong></h3>
+                    <div class="flexColumn colorSystem">
+                        <div class="colorItem">
+                            <div class="colorGuide blue10" style="color: #fff; width: calc(34% - 30px);">
+                                $blue10
+                                <strong style="color: #fff;">#406EFF</strong>
+                            </div>
+                            <div class="colorGuide red10" style="color: #fff; width: calc(34% - 30px);">
+                                $red10
+                                <strong style="color: #fff;">#E75050</strong>
+                            </div>
+                        </div>
+                    </div>
 
                     <div class="description">
-                        <h3>GUIDE</h3>
+                        <h3>SCSS GUIDE</h3>
 
                         <p>
                             _variables.scss에 미리 정의해 둠. <br>
@@ -173,8 +285,8 @@
                         <h3>Example</h3>
                         <pre>
 p {
-    color: $gray01;
-    background-color: $purple;
+    color: $primary;
+    background-color: $success;
 }
                         </pre>
                     </div>

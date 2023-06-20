@@ -1,69 +1,44 @@
 @charset "UTF-8";
 
 // Typography 정의
-
-/* 키 비주얼 타이틀 - 메인(H1)
-SemiBold / Font 50px / #191919 / 자간 -0.3px / Line-Height 1 */
 @mixin h1Typo {
-    @include text(700,32px,1.5625,$black, -0.5px);
-}
-/* 컨텐츠 페이지 타이틀 (H2)
-Bold / Font 36px / #191919 / 자간 -0.3px / Line-Height 1 */
-@mixin h2Typo {
-    @include text(500,26px,1.5384,$black,-0.5px);
+    @include text(700,32px,1.5,$black, -0.5px);
 }
 
-/* 헤더 GNB 타이틀 & 프로세스 타이틀 (H3)
-SemiBold / Font 30px / #191919 / 자간 -0.3px / Line-Height 1  */
+@mixin h2Typo {
+    @include text(600,26px,1.5384,$black,-0.5px);
+}
+
 @mixin h3Typo {
     @include text(700,22px,1.5454,$black,-0.5px);
 }
-/* 그룹타이틀 & 팝업 타이틀 (H4)
-SemiBold / Font 24px / #191919 / 자간 -0.3px /  Line-Height 1  */
+
 @mixin h4Typo {
     @include text(700,20px,1.6,$black,-0.5px);
 }
 
 @mixin h5Typo {
-    @include text(500,18px,1.666,$black,-0.5px);
+    @include text(700,18px,1.666,$black,-0.5px);
 }
 
-/* 컨텐츠 타이틀 (H5)
-SemiBold / Font 20px / #191919 / 자간 -0.3px / Line-Height 1  */
 @mixin p1Typo {
-    @include text(300,16px,1.75,$black,-0.5px);
+    @include text(400,16px,1.75,$black,-0.5px);
 }
-/* 본문 (기본)
-SemiBold / Font 16px / #191919 / 자간 -0.3px / Line-Height 1 */
+
 @mixin p2Typo {
-    @include text(300,15px,1.733,$black,-0.5px);
+    @include text(400,15px,1.733,$black,-0.5px);
 }
-/* 본문 (기본)-400
-Regular / Font 16px / #191919 / 자간 -0.3px / Line-Height 1 */
-// @mixin p2Typo {
-//     @include text(300,16px,normal,$black,-0.3px);
-// }
 
-/* 최소 본문 - 진한
-SemiBold / Font 14px / #191919 / 자간 -1x / Line-Height 1 */
 @mixin small1Typo {
-    @include text(300,14px,1.7142,$black,-0.5px);
+    @include text(400,14px,1.7142,$black,-0.5px);
 }
 
-/* 최소 본문 - 중간
-Regular / Font 14px / #666 / 자간 -0.3px / Line-Height 1 */
-// @mixin small1Typo {
-//     @include text(300,14px,normal,$gray05,-0.3px);
-// }
-/* 최소 본문 - 약한(인풋플레이스 홀드 값)
-Regular / Font 14px / #959595 / 자간 -0.3px / Line-Height 1 */
-// @mixin small1Typo {
-//     @include text(300,14px,normal,$black,-0.3px);
-// }
-/* 예외 (Chip에 사용되는 폰트)
-Regular / Font 16px / #ffffff / 자간 -0.52px / Line-Height 36px */
 @mixin small2Typo {
-    @include text(300,12px,1.6666,$black,-0.5px);
+    @include text(400,13px,1.6666,$black,-0.5px);
+}
+
+@mixin small3Typo {
+    @include text(400,12px,1.6666,$black,-0.5px);
 }
 
 
@@ -76,3 +51,4 @@ Regular / Font 16px / #ffffff / 자간 -0.52px / Line-Height 36px */
 .p2Typo{@include p2Typo;}
 .small1Typo{@include small1Typo;}
 .small2Typo{@include small2Typo;}
+.small3Typo{@include small3Typo;}

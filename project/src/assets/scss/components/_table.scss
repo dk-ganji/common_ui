@@ -3,7 +3,7 @@
 .table-defult {
     width:100%;margin:0 auto;border-top:2px solid #000;box-sizing:border-box;
     td {
-        padding:16px 0;border-bottom:1px solid $gray02;vertical-align:middle;
+        padding:16px 0;border-bottom:1px solid $gray20;vertical-align:middle;
         &:first-child {text-align:center;font-weight:600;vertical-align:middle;}
         &:nth-child(2) {padding-left:32px;}
         &:last-child {text-align:right;padding-right:24px; }
@@ -13,7 +13,7 @@
 }
 
 .table-default2 {
-    width:100%;  border-top:1px solid $gray02; border-bottom:1px solid $gray02;
+    width:100%;  border-top:1px solid $gray20; border-bottom:1px solid $gray20;
     tr {display:block;padding:5px 40px;}
     th {display:block;width:100%;text-align:left;}
     td {display:block;width:100%;}
@@ -40,10 +40,10 @@
             dt {
                 position:relative;padding-left:22px;
                 &::before {
-                    display: block; content: "";position: absolute; left: 10px; top: 11px;  width: 6px; height:1px;  text-align: left; background: $gray05;
+                    display: block; content: "";position: absolute; left: 10px; top: 11px;  width: 6px; height:1px;  text-align: left; background: $gray50;
                 }
                 &::after {
-                    display: block; content: ""; position: absolute; left: 10px; top: 5px; height: 6px; width:1px; text-align: left; background: $gray05;
+                    display: block; content: ""; position: absolute; left: 10px; top: 5px; height: 6px; width:1px; text-align: left; background: $gray50;
                 }
             }
         }
@@ -55,13 +55,13 @@
         }
     }
     .table-default2{
-        background: $gray06; padding:20px 0px; display: block;
+        background: $gray60; padding:20px 0px; display: block;
     }
     tbody{
          padding-top: 20px; padding-bottom: 35px; display: block;
     }
     .table-result {
-        background: $gray06;padding:20px 40px;
+        background: $gray60;padding:20px 40px;
         .txt-vt{
             @include h4Typo;
             *{@extend %fontInherit;}
@@ -80,7 +80,7 @@ p.bang-notice {
 ul.bang-notice {
     margin-top:30px;
     li {
-        @include text(400,26px,1.46,$gray05,-1px);
+        @include text(400,26px,1.46,$gray50,-1px);
         @include backgroundImg('../../assets/images/icon/ico-notice.svg',top left,  32px 32px);
          padding-left:42px;
          &+li {margin-top:10px;}
@@ -97,13 +97,13 @@ ul.bang-notice {
     .table-title {margin-bottom:20px; @include p1Typo;}
     .table-list {
         width:100%;margin:0 auto;border-top:1px solid $black;box-sizing:border-box;text-align:center;table-layout:fixed;
-        thead {border-bottom:1px solid $gray02;}
+        thead {border-bottom:1px solid $gray20;}
         th {
             padding:20px 0;vertical-align:middle;
             @include p2Typo;color:$black;
         }
         td {
-            padding:20px 0;border-bottom:1px solid $gray02;vertical-align:middle;
+            padding:20px 0;border-bottom:1px solid $gray20;vertical-align:middle;
             @include p2Typo;color:$black;
             a {display:inline-block;max-width:100%;@include p2Typo;color:$black;vertical-align:middle;}
             &.subject {text-align:left;}
@@ -118,7 +118,7 @@ ul.bang-notice {
 }
 
 .c-black {color:$black;font-weight:600;}
-.c-gray {color:$gray05;}
+.c-gray {color:$gray50;}
 .c-purple {color:$purple;font-weight:600;}
 .c-hotpink {
     color:$hotpink;font-weight:600;
@@ -134,12 +134,12 @@ ul.bang-notice {
 
 .box-table {
     .table-title{
-        padding:0 0 30px 40px;border-bottom:1px solid $gray02;
+        padding:0 0 30px 40px;border-bottom:1px solid $gray20;
         @include p1Typo;
     }
     // Table Type01(Basic)
     .table-type-01 {
-        width:100%;border-bottom:2px solid $gray02;
+        width:100%;border-bottom:2px solid $gray20;
         tr {
             th {
                 padding:20px;
@@ -161,7 +161,7 @@ ul.bang-notice {
         }
         tfoot {
             tr {
-                background-color:$gray01;
+                background-color:$gray10;
                 * {padding:40px 20px;}
             }
         }
@@ -170,7 +170,7 @@ ul.bang-notice {
     .table-type-03 {
         max-width:90%;width:100%;margin:0 auto;
         tr {
-            border-bottom:2px solid $gray02;
+            border-bottom:2px solid $gray20;
             th {
                 padding:40px 30px;
                 @include p2Typo;color:$black;text-align:left;
@@ -182,7 +182,7 @@ ul.bang-notice {
             &.bg-gray {
                 border:none;
                 td, th {
-                    padding:22px 30px;background-color:$gray01;
+                    padding:22px 30px;background-color:$gray10;
                     @include p2Typo;
                 }
                 th {border-radius:14px 0 0 14px;}
@@ -195,7 +195,7 @@ ul.bang-notice {
                 @extend .ball;background-color:$purple;
             }
             &-gray {
-                @extend .ball;background-color:$gray04;position:relative;margin-left:50px;
+                @extend .ball;background-color:$gray40;position:relative;margin-left:50px;
                 &::before {
                     content:'';display:inline-block;position:absolute;left:-50px;top:50%;width:40px;height:40px;transform:translateY(-50%);
                     @include backgroundImg('../../assets/images/icon/ico-arrow-gray.svg', center, contain);
@@ -208,11 +208,11 @@ ul.bang-notice {
     .table-type-04{
         width: 100%;
         th {
-            background-color: $gray06; padding: 20px 0px; text-align: center;
+            background-color: $gray60; padding: 20px 0px; text-align: center;
             @include p2Typo;vertical-align: middle;
         }
         td{
-            padding: 20px 0px; border-bottom: 1px solid $gray02; vertical-align: middle;text-align: center;
+            padding: 20px 0px; border-bottom: 1px solid $gray20; vertical-align: middle;text-align: center;
             @include p2Typo; color: $black;
         }
         &.center{
@@ -223,9 +223,9 @@ ul.bang-notice {
         }
     }
     .table-type-05 {
-        width: 100%;border-top: 2px solid $gray02;
+        width: 100%;border-top: 2px solid $gray20;
         td {
-            vertical-align: middle; padding: 40px 0; border-bottom: 2px solid $gray02;
+            vertical-align: middle; padding: 40px 0; border-bottom: 2px solid $gray20;
             strong{
                 display: block; @include p2Typo; font-weight: 400;
                 & + strong{margin-top:10px; }
@@ -240,11 +240,11 @@ ul.bang-notice {
     .tbl_list{
         width: 100%; margin:10px 0;
         th {
-            background-color: $gray06; padding: 20px 0px; text-align: center;
+            background-color: $gray60; padding: 20px 0px; text-align: center;
             @include p2Typo;vertical-align: middle;
         }
         td{
-            padding: 20px 0px; border-bottom: 1px solid $gray02; vertical-align: middle;text-align: center;
+            padding: 20px 0px; border-bottom: 1px solid $gray20; vertical-align: middle;text-align: center;
             @include p2Typo; color: $black;
         }
         &.center{
@@ -261,7 +261,7 @@ ul.bang-notice {
         .txt-vt {@extend %fontInherit;}
     }
     ul {
-        border-top:1px solid $gray02;
+        border-top:1px solid $gray20;
         li {height:auto;}
         .btn-radio-type2 {
             height:100%;border-radius:0;
@@ -328,17 +328,17 @@ ul.bang-notice {
     .list-wrap.type-ul {
         .list-view {
             dt {
-                padding:30px 0;border-bottom:1px solid $gray02;
+                padding:30px 0;border-bottom:1px solid $gray20;
                 .view-tit {display:block;margin-bottom:10px;@include h4Typo;}
                 &>time {@include small1Typo;}
 
                 &.date-right {
                     display:flex;justify-content:space-between;gap:30px 50px;
-                    &>.date {padding-top:5px;@include p2Typo;color:$gray04;white-space:nowrap;}
+                    &>.date {padding-top:5px;@include p2Typo;color:$gray40;white-space:nowrap;}
                 }
             }
             dd {
-                padding:40px 0;border-bottom:1px solid $gray02;@include p2Typo;color:$black;
+                padding:40px 0;border-bottom:1px solid $gray20;@include p2Typo;color:$black;
                 .view-txt {@include p2Typo;color:$black;line-height:1.5;}
                 .mov-detail{
                     min-height: 300px;
@@ -351,7 +351,7 @@ ul.bang-notice {
 
         .siblings-article {
             li {
-                display:flex;flex-direction:row;padding:30px 40px;border-bottom:1px solid $gray02;
+                display:flex;flex-direction:row;padding:30px 40px;border-bottom:1px solid $gray20;
                 &>b {width:120px;@include p2Typo; font-weight: 600; text-align:left;}
                 &>a {overflow:hidden;text-overflow:ellipsis;width:calc(100% - 120px);@include small1Typo; text-align:left;white-space:nowrap;}
                 .no-article {width:calc(100% - 120px);@include small1Typo;text-align:left;}

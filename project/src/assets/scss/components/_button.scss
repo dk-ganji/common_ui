@@ -19,7 +19,7 @@
         @include small1Typo; width:auto;min-width:84px; height:30px; padding:0 30px;line-height:30px;
     }
     &.line{
-        @extend %btn; background: $white; border:1px solid $gray02; color:$black; transition: border 0.3s;
+        @extend %btn; background: $white; border:1px solid $gray20; color:$black; transition: border 0.3s;
         &:hover{
             border:1px solid $black;
         }
@@ -28,7 +28,7 @@
         }
     }
     &.lightgray{
-        background:$gray06; border:none; color:$gray05;
+        background:$gray60; border:none; color:$gray50;
     }
     &.corner-half{
          @extend %btn; padding:56px 0; border-radius:0 0 40px 40px;
@@ -43,19 +43,19 @@
     &.sticky{
         @extend %btn; border-radius:0;
         &.white{
-            @extend %btn; background: $gray06;
+            @extend %btn; background: $gray60;
         }
     }
 
     &:disabled{
-        @extend %btn; background-color:$gray02;  cursor: default; border: none !important;color:#afafaf;
+        @extend %btn; background-color:$gray20;  cursor: default; border: none !important;color:#afafaf;
     }
 
 }
 .btn-dark-gray{
-    @include p2Typo; color: $white; height:58px; background:$gray05; border-radius:7px; min-width:120px;
+    @include p2Typo; color: $white; height:58px; background:$gray50; border-radius:7px; min-width:120px;
     &:disabled{
-        background-color:$gray02;  cursor: default; color:#afafaf;
+        background-color:$gray20;  cursor: default; color:#afafaf;
     }
 }
 .btn-underline{
@@ -91,18 +91,18 @@
     }
     &-gray{
         @extend .btn-text;
-         justify-content: space-between; align-items: center; width:100%; background:$gray01; padding: 42px 60px; border-radius:28px;
+         justify-content: space-between; align-items: center; width:100%; background:$gray10; padding: 42px 60px; border-radius:28px;
     }
     &-num {
         @extend .btn-text;
-        justify-content: space-between; align-items:center;display: flex; padding:16px 20px;border:1px solid $gray02; border-radius:7px;
+        justify-content: space-between; align-items:center;display: flex; padding:16px 20px;border:1px solid $gray20; border-radius:7px;
         .text {
             @include small1Typo;
             .num {width:20px;height:20px;margin-left:20px;border-radius:50%;background:$purple;@include small1Typo; color:$white;font-size:14px;line-height:20px; display: inline-block; text-align: center;}
         }
     }
     &-line.btn-check{
-        padding: 13px 20px; border:1px solid $gray02; border-radius: 7px;
+        padding: 13px 20px; border:1px solid $gray20; border-radius: 7px;
         label{
             @include p2Typo;
              .txt-vt {margin-right:5px;display:inline-block;}
@@ -115,7 +115,7 @@
     li{
         width: 48%;
         a{
-            display: flex; justify-content: space-between; align-items: center; width: 100%; padding:30px; border-radius: 10px; border:1px solid $gray02; gap:20px;
+            display: flex; justify-content: space-between; align-items: center; width: 100%; padding:30px; border-radius: 10px; border:1px solid $gray20; gap:20px;
             .downLoad-tit{
                 width:calc(100% - 28px); @include p2Typo;
             }
@@ -127,7 +127,7 @@
     li{
         width: 48%;
         a{
-            display: flex; justify-content: space-between; align-items: center; width: 100%; padding:20px; border-radius: 10px; border:1px solid $gray02; gap:20px; background-color: $white;
+            display: flex; justify-content: space-between; align-items: center; width: 100%; padding:20px; border-radius: 10px; border:1px solid $gray20; gap:20px; background-color: $white;
             .link-tit{
                 width:calc(100% - 28px); @include p2Typo;
             }
@@ -157,14 +157,14 @@
     }
 
     .txt-tooltip{
-        position: absolute; top: 30px; left:-75px; /* width: 75.4167vw;  */     min-width: 600px; width: 100%; background-color: $white; box-shadow: 0 3px 30px 0 rgba(0, 0, 0, 0.16);border: solid 1px $gray02;border-radius: 7px; transform: translateY(-20%); opacity: 0; visibility: hidden; transition: transform 0.5s ease, opacity 0.5s ease, visibility 0.5s ease;padding:40px 50px; z-index: 2;
+        position: absolute; top: 30px; left:-75px; /* width: 75.4167vw;  */     min-width: 600px; width: 100%; background-color: $white; box-shadow: 0 3px 30px 0 rgba(0, 0, 0, 0.16);border: solid 1px $gray20;border-radius: 7px; transform: translateY(-20%); opacity: 0; visibility: hidden; transition: transform 0.5s ease, opacity 0.5s ease, visibility 0.5s ease;padding:40px 50px; z-index: 2;
         &.on{transform: translateY(0); opacity: 1; visibility: visible; z-index: 3;}
     }
 }
 
 // 날짜 버튼
 .month-box {
-    display: flex; justify-content: space-between; align-items: center; border:1px solid $gray02; border-radius: 7px;padding:15px;
+    display: flex; justify-content: space-between; align-items: center; border:1px solid $gray20; border-radius: 7px;padding:15px;
     strong {@include p2Typo;}
     .btn-month {
         width:20px !important;height:20px !important;

@@ -16,6 +16,10 @@
         --safe-bottom: env(safe-area-inset-bottom);
     }
 
+	--color-primary: 44,143,155;
+	--color-secondary: 35,58,171;
+	--color-accent: 185,58,138;
+
 }
 
 html, body, div, span, applet, object, iframe,
@@ -31,10 +35,10 @@ table, caption, tbody, tfoot, thead, tr, th, td, button,figure,figcaption,textar
 	padding: 0;
 	border: 0;
 	outline: 0;
-	font-family: 'NotoSans', 'Malgun Gothic', Sans-serif;
+	font-family: 'Pretendard', 'Malgun Gothic', Sans-serif;
 	font-weight: 400;
 	font-size: 16px;
-	color: $gray05;
+	color: $black;
 	vertical-align: baseline;
 	background: transparent;
 	box-sizing: border-box;
@@ -59,7 +63,7 @@ input{
 	-webkit-apperance: none;
 	display: inline-block;
 	box-sizing: border-box;
-	font-family: 'NotoSans';
+	font-family: 'Pretendard';
 	background-color: $white;
 }
 input[type=text]::-ms-clear {
@@ -74,18 +78,18 @@ input[type="number"] {
     -moz-appearance: textfield;
 }
 select{
-	font-family: 'NotoSans', 'Malgun Gothic', Sans-serif;
+	font-family: 'Pretendard', 'Malgun Gothic', Sans-serif;
 	appearance: none;
 }
 button{
 	border:none;
 	cursor:pointer;
-	font-family: 'NotoSans';
+	font-family: 'Pretendard';
 }
 i {font-style: normal;}
 a {
 	text-decoration: none;
-	font-family: 'NotoSans';
+	font-family: 'Pretendard';
 	font-weight: 400;
 	cursor:pointer;
 }
