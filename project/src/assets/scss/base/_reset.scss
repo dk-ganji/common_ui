@@ -92,6 +92,9 @@ a {
 	font-family: 'Pretendard';
 	font-weight: 400;
 	cursor:pointer;
+	&:hover{
+		color: $primary !important;
+	}
 }
 /* remember to define focus styles! */
 :focus {

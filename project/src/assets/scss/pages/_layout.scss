@@ -1,0 +1,85 @@
+@charset "UTF-8";
+header{
+    display: flex; justify-content: center; width: 100%; 
+    .inner{
+        display: flex; justify-content: space-between; align-items: center; width: 1536px; height: 80px;
+        h1{
+            width: 149px;
+        }
+        nav{
+            width: auto;
+            > ul{
+                display: flex; align-items: center; position: relative; height: 80px;
+                > li{
+                    flex: 1; position: relative;
+                    a{
+                        display: block; @include h5Typo; text-align: center;
+                    }
+                    ul{
+                        position: absolute; left: 0; top: 55px; z-index: 2; height: 260px; padding-top: 24px; border-right: 1px solid $gray40;
+                        li{
+                            a{
+                                @include p1Typo;
+                                &:hover{
+                                    text-decoration: underline;
+                                }
+                            }
+                        }
+                    }
+                    &:last-child{
+                        ul{
+                            border-right: 0;
+                        }
+                    }
+                }
+                li{
+                    width: 180px;
+                }
+                &:after{content: ''; position: absolute; left: 0; bottom: -1px; width: 20px; height: 3px; background-color: $primary;}
+            }
+            .navBg{
+                position: absolute; left: 0; top: 80px; width: 100vw; height: 260px; border-top: 1px solid $gray40; background-color: $white;
+            }
+        }
+        .headerUtil{
+            display: flex; align-items: center;
+           li{
+                display: inline-flex;
+                a{
+                    @include small1Typo;
+                }
+                &.login{
+                    position: relative; padding-right: 11px; margin-right: 10px;
+                    &:after{content: ''; position: absolute; right: 0; top: 50%; transform: translateY(-50%); width: 1px; height: 12px; background-color: $gray70;}
+                }
+                &.join{
+                    margin-right: 15px;
+                }
+                &.search, &.language{
+                    button{
+                        width: 32px; height: 32px; background-repeat: no-repeat; background-position: 0 0; font-size: 0;
+                    }
+                }
+                &.search{
+                    button{
+                        margin-right: 15px; background-image: url('../../assets/images/icon/icon_search.svg');
+                    }
+                }
+                &.language{
+                    button{
+                        background-image: url('../../assets/images/icon/icon_language_select.svg');
+                    }
+                }
+
+           }
+        }
+    }
+}
+
+main{
+    .container{
+        .kv{
+            height: 500px; background-color: $gray50;
+        }
+    }
+}
